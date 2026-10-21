@@ -25,7 +25,7 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   🤖 <b>Multi-agent & RAG pipelines</b> with LangGraph, FAISS, Pinecone and rerankers<br>
   🔎 <b>Search & ranking</b>: BM25 + dense retrieval, rank fusion, explainable scoring<br>
   🛰️ <b>Big-data platforms</b> on HDFS, Spark, Kafka and Neo4j<br>
-  🧠 <b>Computer vision</b> for medical imaging and flood detection<br>
+  🧠 <b>Computer vision</b> for medical imaging<br>
   🌐 <b>Full-stack apps</b> deployed and in use
 </p>
 
@@ -45,7 +45,7 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   </tr>
   <tr>
     <td width="50%"><a href="https://github.com/Abhxym/Glaucoma-AI"><img src="assets/cards/glaucoma-ai.svg" alt="Glaucoma AI" width="100%"></a></td>
-    <td width="50%"><a href="https://github.com/Abhxym/aquaAlert--ai"><img src="assets/cards/aquaalert.svg" alt="AquaAlert AI" width="100%"></a></td>
+    <td width="50%"><a href="https://siddhi-hygiene.vercel.app"><img src="assets/cards/siddhi-hygiene.svg" alt="Siddhi Hygiene (live)" width="100%"></a></td>
   </tr>
   <tr>
     <td width="50%"><a href="https://schoolmonitor.vercel.app"><img src="assets/cards/schoolmonitor.svg" alt="School Monitor (live)" width="100%"></a></td>
@@ -53,7 +53,7 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   </tr>
 </table>
 
-<p align="center"><sub>Click a card to open the project. The two LIVE cards open the deployed sites; their code is in <a href="https://github.com/Abhxym/schoolmonitor">schoolmonitor</a> and <a href="https://github.com/Abhxym/system-design-atlas">system-design-atlas</a>.</sub></p>
+<p align="center"><sub>Click a card to open the project. LIVE cards open the deployed sites; their code is in <a href="https://github.com/Abhxym/siddhi-hygiene">siddhi-hygiene</a>, <a href="https://github.com/Abhxym/schoolmonitor">schoolmonitor</a> and <a href="https://github.com/Abhxym/system-design-atlas">system-design-atlas</a>.</sub></p>
 
 <br>
 
@@ -72,12 +72,18 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Abhxym/redrob-ai"><img src="https://raw.githubusercontent.com/Abhxym/redrob-ai/main/docs/img/results.png" alt="RedRob AI ranked candidates"></a>
-      <p align="center"><b>RedRob AI</b> · ranked candidates, each with the signals behind its score</p>
+      <a href="https://github.com/Abhxym/redrob-ai"><img src="https://raw.githubusercontent.com/Abhxym/redrob-ai/main/docs/img/home.png" alt="RedRob AI landing page"></a>
+      <p align="center"><b>RedRob AI</b> · explainable candidate ranking you can defend</p>
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/Abhxym/InsightFlow"><img src="https://raw.githubusercontent.com/Abhxym/InsightFlow/master/docs/img/dashboard.png" alt="InsightFlow dashboard"></a>
       <p align="center"><b>InsightFlow</b> · survey analytics with plain-English questions</p>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" align="center" valign="top">
+      <a href="https://siddhi-hygiene.vercel.app"><img src="assets/screens/siddhi-hygiene.jpg" alt="Siddhi Hygiene landing page" width="70%"></a>
+      <p align="center"><b>Siddhi Hygiene</b> · landing page for a Pune commercial cleaning company (<a href="https://siddhi-hygiene.vercel.app">live</a>)</p>
     </td>
   </tr>
 </table>
@@ -150,7 +156,6 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
 |---|---|---|
 | [**Glaucoma segmentation**](https://github.com/Abhxym/Unet-and-Yolo-segmentation-for-Glaucoma-Detection) | Coarse-to-fine optic disc and cup segmentation on Drishti-GS1: YOLOv8 crop, then a ResNet34 UNet++ with test-time augmentation (>91% vCDR accuracy). | PyTorch · YOLOv8 · UNet++ |
 | [**Real Estate Analytics**](https://github.com/Abhxym/Real_Estate_Data_Curation) | Seven-page analytics dashboard for customers, properties, brokers and deals, with price-prediction and deal-status models. | Python · Streamlit · scikit-learn |
-| [**Siddhi Hygiene**](https://siddhi-hygiene.vercel.app) | Website for a Pune deep-cleaning and sanitisation company serving offices, factories and hospitals ([code](https://github.com/Abhxym/siddhi-hygiene)). | React · Vite · Vercel |
 | [**RedRob AI v1**](https://github.com/Abhxym/redrob-ai-main) | First version of the candidate ranker, built for the India Runs Data & AI Challenge. | Streamlit · Sentence-Transformers · FAISS |
 
 <p align="center"><img src="assets/footer.svg" alt="" width="100%"></p>
