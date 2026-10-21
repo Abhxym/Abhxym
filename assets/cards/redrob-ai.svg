@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="236" viewBox="0 0 440 236" role="img" aria-label="RedRob AI: Explainable candidate ranking over 100k profiles: BM25 + FAISS fused with RRF, JD-aware signals and a cross-encoder rerank.">
+  <defs>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ef4444"/><stop offset="1" stop-color="#f97316"/></linearGradient>
+    <radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="#ef4444" stop-opacity=".28"/><stop offset=".6" stop-color="#f97316" stop-opacity="0"/></radialGradient>
+    <clipPath id="clip"><rect width="440" height="236" rx="18"/></clipPath>
+    <style>
+      .cat{font:700 10.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;letter-spacing:1.6px;fill:#ef4444}
+      .title{font:800 25px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#f8fafc}
+      .desc{font:400 13.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#a8b3c7}
+      .hl{font:600 12px 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;fill:#f97316}
+      .chip{fill:#ffffff0d;stroke:#ffffff1f;stroke-width:1}
+      .chipt{font:600 11.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#dbe3ef}
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="440" height="236" fill="#0b1020"/>
+    <rect width="440" height="236" fill="url(#glow)"/>
+    <rect width="5" height="236" fill="url(#acc)"/>
+  </g>
+  <rect x=".5" y=".5" width="439" height="235" rx="17.5" fill="none" stroke="#ffffff1a"/>
+  <text x="28" y="38" class="cat">SEARCH · RANKING</text>
+  
+  <text x="28" y="74" class="title">RedRob AI</text>
+  <text x="28" y="104" class="desc">Explainable candidate ranking over 100k profiles: BM25 +</text><text x="28" y="124" class="desc">FAISS fused with RRF, JD-aware signals and a cross-</text><text x="28" y="144" class="desc">encoder rerank.</text>
+  <text x="28" y="174" class="hl">▸ No LLM · CPU only · every score explained</text>
+  <rect x="28.0" y="194" width="49.6" height="24" rx="12" class="chip"/><text x="52.8" y="210.5" class="chipt" text-anchor="middle">BM25</text><rect x="85.6" y="194" width="56.5" height="24" rx="12" class="chip"/><text x="113.8" y="210.5" class="chipt" text-anchor="middle">FAISS</text><rect x="150.1" y="194" width="111.7" height="24" rx="12" class="chip"/><text x="205.9" y="210.5" class="chipt" text-anchor="middle">Cross-encoder</text><rect x="269.8" y="194" width="70.3" height="24" rx="12" class="chip"/><text x="305.0" y="210.5" class="chipt" text-anchor="middle">FastAPI</text><rect x="348.1" y="194" width="56.5" height="24" rx="12" class="chip"/><text x="376.4" y="210.5" class="chipt" text-anchor="middle">React</text>
+</svg>

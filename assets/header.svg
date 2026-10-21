@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-label="Hi, I'm Abhxym. AI/ML engineer building agentic, retrieval and data systems.">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b18"/><stop offset="1" stop-color="#130a26"/></linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#c084fc"/><stop offset=".5" stop-color="#f472b6"/><stop offset="1" stop-color="#fbbf24"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.3 0;0.3 0;-0.3 0" dur="8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <radialGradient id="b1"><stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b2"><stop offset="0" stop-color="#f59e0b" stop-opacity=".35"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
+    <radialGradient id="b3"><stop offset="0" stop-color="#06b6d4" stop-opacity=".35"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045"/></pattern>
+    <clipPath id="clip"><rect width="1200" height="340" rx="24"/></clipPath>
+    <style>
+      .hi{font:600 22px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#94a3b8;letter-spacing:.5px}
+      .name{font:900 76px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:url(#name);letter-spacing:-1.5px}
+      .role{font:600 28px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#e2e8f0}
+      .tag{font:500 15px 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;fill:#64748b}
+      .edge{stroke:#a78bfa;stroke-opacity:.35;stroke-width:1.5}
+      .node{fill:#0b1020;stroke:#c084fc;stroke-width:2.5}
+    </style>
+  </defs>
+  <g clip-path="url(#clip)">
+    <rect width="1200" height="340" fill="url(#bg)"/>
+    <rect width="1200" height="340" fill="url(#grid)"/>
+    <circle cx="180" cy="40" r="260" fill="url(#b1)"><animate attributeName="cx" values="180;260;180" dur="14s" repeatCount="indefinite"/></circle>
+    <circle cx="1050" cy="320" r="240" fill="url(#b2)"><animate attributeName="cy" values="320;270;320" dur="11s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="-20" r="220" fill="url(#b3)"><animate attributeName="cx" values="700;620;700" dur="13s" repeatCount="indefinite"/></circle>
+    <line x1="820" y1="90" x2="930" y2="60" class="edge"/><line x1="930" y1="60" x2="1050" y2="100" class="edge"/><line x1="1050" y1="100" x2="1110" y2="190" class="edge"/><line x1="930" y1="60" x2="990" y2="170" class="edge"/><line x1="990" y1="170" x2="1110" y2="190" class="edge"/><line x1="820" y1="90" x2="880" y2="200" class="edge"/><line x1="880" y1="200" x2="990" y2="170" class="edge"/><line x1="880" y1="200" x2="960" y2="270" class="edge"/><line x1="960" y1="270" x2="1080" y2="280" class="edge"/><line x1="990" y1="170" x2="1080" y2="280" class="edge"/><line x1="800" y1="260" x2="880" y2="200" class="edge"/><line x1="800" y1="260" x2="960" y2="270" class="edge"/><line x1="1050" y1="100" x2="990" y2="170" class="edge"/>
+    <circle r="3.2" fill="#fbbf24"><animateMotion dur="2.6s" begin="0.00s" repeatCount="indefinite" path="M820,90 L930,60"/></circle><circle r="3.2" fill="#fbbf24"><animateMotion dur="3.3s" begin="0.45s" repeatCount="indefinite" path="M1050,100 L1110,190"/></circle><circle r="3.2" fill="#fbbf24"><animateMotion dur="4.0s" begin="0.90s" repeatCount="indefinite" path="M990,170 L1110,190"/></circle><circle r="3.2" fill="#fbbf24"><animateMotion dur="4.7s" begin="1.35s" repeatCount="indefinite" path="M880,200 L990,170"/></circle><circle r="3.2" fill="#fbbf24"><animateMotion dur="2.6s" begin="1.80s" repeatCount="indefinite" path="M960,270 L1080,280"/></circle><circle r="3.2" fill="#fbbf24"><animateMotion dur="3.3s" begin="2.25s" repeatCount="indefinite" path="M800,260 L880,200"/></circle><circle r="3.2" fill="#fbbf24"><animateMotion dur="4.0s" begin="2.70s" repeatCount="indefinite" path="M1050,100 L990,170"/></circle>
+    <circle cx="820" cy="90" r="10" class="node"><animate attributeName="r" values="10;13;10" dur="3s" repeatCount="indefinite"/></circle><circle cx="930" cy="60" r="7" class="node"><animate attributeName="r" values="7;9;7" dur="4s" repeatCount="indefinite"/></circle><circle cx="1050" cy="100" r="7" class="node"><animate attributeName="r" values="7;9;7" dur="5s" repeatCount="indefinite"/></circle><circle cx="1110" cy="190" r="10" class="node"><animate attributeName="r" values="10;13;10" dur="3s" repeatCount="indefinite"/></circle><circle cx="990" cy="170" r="7" class="node"><animate attributeName="r" values="7;9;7" dur="4s" repeatCount="indefinite"/></circle><circle cx="880" cy="200" r="7" class="node"><animate attributeName="r" values="7;9;7" dur="5s" repeatCount="indefinite"/></circle><circle cx="960" cy="270" r="10" class="node"><animate attributeName="r" values="10;13;10" dur="3s" repeatCount="indefinite"/></circle><circle cx="1080" cy="280" r="7" class="node"><animate attributeName="r" values="7;9;7" dur="4s" repeatCount="indefinite"/></circle><circle cx="800" cy="260" r="7" class="node"><animate attributeName="r" values="7;9;7" dur="5s" repeatCount="indefinite"/></circle>
+  </g>
+  <rect x=".5" y=".5" width="1199" height="339" rx="23.5" fill="none" stroke="#ffffff1f"/>
+  <text x="82" y="104" class="hi">Hi there, I'm</text>
+  <text x="76" y="180" class="name">Abhxym</text>
+  <text x="80" y="226" class="role" opacity="0">AI / ML Engineer<animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.0208;0.2292;0.2500;1" dur="12s" repeatCount="indefinite"/></text><text x="80" y="226" class="role" opacity="0">Agentic &amp; RAG systems<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2500;0.2708;0.4792;0.5000;1" dur="12s" repeatCount="indefinite"/></text><text x="80" y="226" class="role" opacity="0">Big-data pipelines<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5000;0.5208;0.7292;0.7500;1" dur="12s" repeatCount="indefinite"/></text><text x="80" y="226" class="role" opacity="0">Full-stack apps that ship<animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.7500;0.7708;0.9792;1" dur="12s" repeatCount="indefinite"/></text>
+  <text x="82" y="282" class="tag">// LLM agents · RAG &amp; search · data platforms · full-stack</text>
+</svg>
