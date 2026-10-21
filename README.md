@@ -36,24 +36,70 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
 
 <table>
   <tr>
-    <td width="50%"><a href="https://github.com/Abhxym/ClipMind-AI"><img src="assets/cards/clipmind.svg" alt="ClipMind AI" width="100%"></a></td>
-    <td width="50%"><a href="https://github.com/Abhxym/supplychain-x"><img src="assets/cards/supplychain-x.svg" alt="SUPPLYCHAIN-X" width="100%"></a></td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Abhxym/supplychain-x">SUPPLYCHAIN-X</a></h3>
+      <sub><b>BIG DATA · GRAPHS</b></sub>
+      <p>Distributed platform that traces how a disaster cascades through global supply chains, hop by hop. 48,827 disaster events, 330k trade rows and a live Kafka feed.</p>
+      <p><sub>HDFS · Spark · Kafka · Neo4j · FastAPI · D3</sub></p>
+      <p><sub><a href="https://github.com/Abhxym/supplychain-x">View on GitHub</a></sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Abhxym/redrob-ai">RedRob AI</a></h3>
+      <sub><b>SEARCH · RANKING</b></sub>
+      <p>Explainable candidate ranking over 100k profiles: BM25 + FAISS fused with RRF, JD-aware signals and a cross-encoder rerank. No LLM, CPU only.</p>
+      <p><sub>BM25 · FAISS · Cross-encoder · FastAPI · React</sub></p>
+      <p><sub><a href="https://github.com/Abhxym/redrob-ai">View on GitHub</a></sub></p>
+    </td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://github.com/Abhxym/redrob-ai"><img src="assets/cards/redrob-ai.svg" alt="RedRob AI" width="100%"></a></td>
-    <td width="50%"><a href="https://github.com/Abhxym/InsightFlow"><img src="assets/cards/insightflow.svg" alt="InsightFlow" width="100%"></a></td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Abhxym/InsightFlow">InsightFlow</a></h3>
+      <sub><b>NLP · RAG ANALYTICS</b></sub>
+      <p>Survey analytics where non-technical users ask questions in plain English: themes and sentiment, plus a RAG agent that answers with citations.</p>
+      <p><sub>Gemini · Pinecone · FastAPI · React · Node.js · MySQL</sub></p>
+      <p><sub><a href="https://github.com/Abhxym/InsightFlow">View on GitHub</a></sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Abhxym/Glaucoma-AI">Glaucoma AI</a></h3>
+      <sub><b>MEDICAL IMAGING</b></sub>
+      <p>Multi-stage clinical decision support that screens retinal fundus images for glaucoma (YOLOv8 → UNet++ / transformer → XGBoost), with a dashboard for doctors.</p>
+      <p><sub>PyTorch · YOLOv8 · UNet++ · XGBoost · Next.js</sub></p>
+      <p><sub><a href="https://github.com/Abhxym/Glaucoma-AI">View on GitHub</a></sub></p>
+    </td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://github.com/Abhxym/Glaucoma-AI"><img src="assets/cards/glaucoma-ai.svg" alt="Glaucoma AI" width="100%"></a></td>
-    <td width="50%"><a href="https://siddhi-hygiene.vercel.app"><img src="assets/cards/siddhi-hygiene.svg" alt="Siddhi Hygiene (live)" width="100%"></a></td>
+    <td width="50%" valign="top">
+      <h3><a href="https://siddhi-hygiene.vercel.app">Siddhi Hygiene</a></h3>
+      <sub><b>WEB · BUSINESS SITE</b></sub>
+      <p>Website for a Pune commercial deep-cleaning and sanitisation company: services, industries served, results, free-quote and inspection requests.</p>
+      <p><sub>React · Vite · Vercel</sub></p>
+      <p><sub><a href="https://siddhi-hygiene.vercel.app">Live site</a> · <a href="https://github.com/Abhxym/siddhi-hygiene">Code</a></sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://schoolmonitor.vercel.app">School Monitor</a></h3>
+      <sub><b>FULL-STACK · GOV-TECH</b></sub>
+      <p>Monitoring system for 12 Zilla Parishad schools: attendance, events, reports, GR publishing and a public transparency page, with role-based access.</p>
+      <p><sub>Next.js · Express · MongoDB · JWT · Google OAuth</sub></p>
+      <p><sub><a href="https://schoolmonitor.vercel.app">Live site</a> · <a href="https://github.com/Abhxym/schoolmonitor">Code</a></sub></p>
+    </td>
   </tr>
   <tr>
-    <td width="50%"><a href="https://schoolmonitor.vercel.app"><img src="assets/cards/schoolmonitor.svg" alt="School Monitor (live)" width="100%"></a></td>
-    <td width="50%"><a href="https://abhxym.github.io/system-design-atlas/"><img src="assets/cards/system-design-atlas.svg" alt="System Design Atlas (live)" width="100%"></a></td>
+    <td width="50%" valign="top">
+      <h3><a href="https://abhxym.github.io/system-design-atlas/">System Design Atlas</a></h3>
+      <sub><b>INTERACTIVE REFERENCE</b></sub>
+      <p>Animated, interactive reference for 111 system design concepts across 16 domains, with trade-offs, real examples and interview prep.</p>
+      <p><sub>HTML · Canvas · JavaScript</sub></p>
+      <p><sub><a href="https://abhxym.github.io/system-design-atlas/">Live site</a> · <a href="https://github.com/Abhxym/system-design-atlas">Code</a></sub></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/Abhxym/ClipMind-AI">ClipMind AI</a></h3>
+      <sub><b>GENERATIVE AI · AGENTS</b></sub>
+      <p>13-agent LangGraph pipeline that turns raw video clips and a one-line brief into a captioned, platform-ready reel, with brand-guide RAG and a review loop.</p>
+      <p><sub>LangGraph · Gemini · Whisper · FAISS · FFmpeg · React</sub></p>
+      <p><sub><a href="https://github.com/Abhxym/ClipMind-AI">View on GitHub</a></sub></p>
+    </td>
   </tr>
 </table>
-
-<p align="center"><sub>Click a card to open the project. LIVE cards open the deployed sites; their code is in <a href="https://github.com/Abhxym/siddhi-hygiene">siddhi-hygiene</a>, <a href="https://github.com/Abhxym/schoolmonitor">schoolmonitor</a> and <a href="https://github.com/Abhxym/system-design-atlas">system-design-atlas</a>.</sub></p>
 
 <br>
 
@@ -62,28 +108,28 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
 <table>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/Abhxym/ClipMind-AI"><img src="https://raw.githubusercontent.com/Abhxym/ClipMind-AI/main/docs/img/hero.png" alt="ClipMind AI dashboard"></a>
-      <p align="center"><b>ClipMind AI</b> · 13 agents plan, caption and cut a reel from raw clips</p>
-    </td>
-    <td width="50%" valign="top">
       <a href="https://github.com/Abhxym/supplychain-x"><img src="https://raw.githubusercontent.com/Abhxym/supplychain-x/main/docs/img/dashboard.png" alt="SUPPLYCHAIN-X dashboard"></a>
       <p align="center"><b>SUPPLYCHAIN-X</b> · Typhoon Hagibis spreading through supply links, hop by hop</p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/Abhxym/redrob-ai"><img src="https://raw.githubusercontent.com/Abhxym/redrob-ai/main/docs/img/home.png" alt="RedRob AI landing page"></a>
       <p align="center"><b>RedRob AI</b> · explainable candidate ranking you can defend</p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <a href="https://github.com/Abhxym/InsightFlow"><img src="https://raw.githubusercontent.com/Abhxym/InsightFlow/master/docs/img/dashboard.png" alt="InsightFlow dashboard"></a>
       <p align="center"><b>InsightFlow</b> · survey analytics with plain-English questions</p>
     </td>
+    <td width="50%" valign="top">
+      <a href="https://siddhi-hygiene.vercel.app"><img src="assets/screens/siddhi-hygiene.jpg" alt="Siddhi Hygiene landing page"></a>
+      <p align="center"><b>Siddhi Hygiene</b> · landing page for a Pune commercial cleaning company</p>
+    </td>
   </tr>
   <tr>
     <td colspan="2" align="center" valign="top">
-      <a href="https://siddhi-hygiene.vercel.app"><img src="assets/screens/siddhi-hygiene.jpg" alt="Siddhi Hygiene landing page" width="70%"></a>
-      <p align="center"><b>Siddhi Hygiene</b> · landing page for a Pune commercial cleaning company (<a href="https://siddhi-hygiene.vercel.app">live</a>)</p>
+      <a href="https://github.com/Abhxym/ClipMind-AI"><img src="https://raw.githubusercontent.com/Abhxym/ClipMind-AI/main/docs/img/hero.png" alt="ClipMind AI dashboard" width="70%"></a>
+      <p align="center"><b>ClipMind AI</b> · 13 agents plan, caption and cut a reel from raw clips</p>
     </td>
   </tr>
 </table>

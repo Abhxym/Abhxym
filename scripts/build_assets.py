@@ -3,13 +3,12 @@ Builds the black & white SVG artwork used by the profile README.
 
     python scripts/build_assets.py
 
-Edit HANDLE / PROJECTS / SECTIONS below and re-run; assets/ is regenerated.
+Edit HANDLE / SECTIONS below and re-run; assets/ is regenerated.
 Every SVG carries its own dark background, so it reads the same in GitHub's light and dark themes.
 """
 from __future__ import annotations
 
 import random
-import textwrap
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -20,42 +19,6 @@ MONO = "'Courier New', Consolas, 'Liberation Mono', monospace"
 
 HANDLE = "Abhxym"
 
-# slug, title, category, description, highlight, chips, badge
-PROJECTS = [
-    ("clipmind", "ClipMind AI", "GENERATIVE AI · AGENTS",
-     "13-agent LangGraph pipeline that turns raw video clips and a one-line brief into a captioned, platform-ready reel.",
-     "RAG brand rules · review loop · live agent graph",
-     ["LangGraph", "Gemini", "Whisper", "FAISS", "FFmpeg", "React"], None),
-    ("supplychain-x", "SUPPLYCHAIN-X", "BIG DATA · GRAPHS",
-     "Distributed platform that traces how a disaster cascades through global supply chains, hop by hop.",
-     "48,827 disasters · 330k trade rows · Kafka live",
-     ["HDFS", "Spark", "Kafka", "Neo4j", "FastAPI", "D3"], None),
-    ("redrob-ai", "RedRob AI", "SEARCH · RANKING",
-     "Explainable candidate ranking over 100k profiles: BM25 + FAISS fused with RRF, JD-aware signals and a cross-encoder rerank.",
-     "No LLM · CPU only · every score explained",
-     ["BM25", "FAISS", "Cross-encoder", "FastAPI", "React"], None),
-    ("insightflow", "InsightFlow", "NLP · RAG ANALYTICS",
-     "Survey analytics where non-technical users ask questions in plain English and get cited answers.",
-     "Themes + sentiment · RAG agent with citations",
-     ["Gemini", "Pinecone", "FastAPI", "React", "Node.js", "MySQL"], None),
-    ("glaucoma-ai", "Glaucoma AI", "MEDICAL IMAGING",
-     "Multi-stage clinical decision support that screens retinal fundus images for glaucoma, with a dashboard for doctors.",
-     "YOLOv8 → UNet++ / transformer → XGBoost",
-     ["PyTorch", "YOLOv8", "UNet++", "XGBoost", "Next.js"], None),
-    ("siddhi-hygiene", "Siddhi Hygiene", "WEB · BUSINESS SITE",
-     "Website for a Pune commercial deep-cleaning and sanitisation company: services, industries served, results and quotes.",
-     "Free-quote + inspection CTAs · chat widget",
-     ["React", "Vite", "Vercel"], "LIVE"),
-    ("schoolmonitor", "School Monitor", "FULL-STACK · GOV-TECH",
-     "Monitoring system for 12 Zilla Parishad schools: attendance, events, reports, GR publishing and a public transparency page.",
-     "Role-based access · Google OAuth · deployed",
-     ["Next.js", "Express", "MongoDB", "JWT"], "LIVE"),
-    ("system-design-atlas", "System Design Atlas", "INTERACTIVE REFERENCE",
-     "Animated, interactive reference for 111 system design concepts with trade-offs, real examples and interview prep.",
-     "16 domains · 10 classic systems, step by step",
-     ["HTML", "Canvas", "JavaScript"], "LIVE"),
-]
-
 # slug, title, icon path (16x16 viewBox)
 SECTIONS = [
     ("about", "About me", "M8 8a3.5 3.5 0 100-7 3.5 3.5 0 000 7zm0 1.5c-3.3 0-6 1.8-6 4v1.5h12V13.5c0-2.2-2.7-4-6-4z"),
@@ -64,59 +27,6 @@ SECTIONS = [
     ("stack", "Technologies", "M5.7 3.3L1 8l4.7 4.7 1.1-1.1L3.2 8l3.6-3.6zm4.6 0L9.2 4.4 12.8 8l-3.6 3.6 1.1 1.1L15 8z"),
     ("more", "More projects", "M2 2.5h5v5H2zm7 0h5v5H9zM2 9.5h5v5H2zm7 0h5v5H9z"),
 ]
-
-
-def chip_width(text: str) -> float:
-    return len(text) * 6.9 + 22
-
-
-def card_svg(slug, title, category, desc, highlight, chips, badge) -> str:
-    w, h = 440, 236
-    lines = textwrap.wrap(desc, 56)[:3]
-    desc_svg = "".join(
-        f'<text x="28" y="{104 + i * 20}" class="desc">{escape(line)}</text>' for i, line in enumerate(lines)
-    )
-    hl_y = 104 + len(lines) * 20 + 10
-    x, chips_svg = 28.0, ""
-    for c in chips:
-        cw = chip_width(c)
-        if x + cw > w - 24:
-            break
-        chips_svg += (
-            f'<rect x="{x:.1f}" y="194" width="{cw:.1f}" height="24" rx="4" class="chip"/>'
-            f'<text x="{x + cw / 2:.1f}" y="210.5" class="chipt" text-anchor="middle">{escape(c)}</text>'
-        )
-        x += cw + 8
-    badge_svg = ""
-    if badge:
-        badge_svg = (
-            f'<rect x="{w - 84}" y="22" width="58" height="22" rx="4" fill="#111111" />'
-            f'<circle cx="{w - 72}" cy="33" r="3.5" fill="#fff"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>'
-            f'<text x="{w - 46}" y="37.5" text-anchor="middle" style="font:700 10.5px {MONO};fill:#fff;letter-spacing:1px">{badge}</text>'
-        )
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}: {escape(desc)}">
-  <defs>
-    <!-- Same light-grey sky tones as the banner -->
-    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ececec"/><stop offset=".6" stop-color="#d4d4d4"/><stop offset="1" stop-color="#bdbdbd"/></linearGradient>
-    <style>
-      .cat{{font:700 11px {MONO};letter-spacing:1.5px;fill:#5c5c5c}}
-      .title{{font:800 25px {FONT};fill:#111111}}
-      .desc{{font:400 13.5px {FONT};fill:#333333}}
-      .hl{{font:700 12px {MONO};fill:#111111}}
-      .chip{{fill:#f5f5f5;stroke:#11111140;stroke-width:1}}
-      .chipt{{font:600 11.5px {FONT};fill:#222222}}
-    </style>
-  </defs>
-  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="url(#bg)" stroke="#00000033"/>
-  <path d="M0 {h - 46} C {w * .3:.0f} {h - 62} {w * .6:.0f} {h - 40} {w} {h - 56} V{h - 10} Q{w} {h} {w - 10} {h} H10 Q0 {h} 0 {h - 10}Z" fill="#a8a8a8" opacity=".35"/>
-  <text x="28" y="38" class="cat">{escape(category)}</text>
-  {badge_svg}
-  <text x="28" y="74" class="title">{escape(title)}</text>
-  {desc_svg}
-  <text x="28" y="{hl_y}" class="hl">&gt; {escape(highlight)}</text>
-  {chips_svg}
-</svg>
-'''
 
 
 def banner_svg() -> str:
@@ -236,17 +146,12 @@ def main() -> None:
     for old in ASSETS.glob("section-*.svg"):
         old.unlink()
     (ASSETS / "header.svg").unlink(missing_ok=True)
-    (ASSETS / "cards").mkdir(parents=True, exist_ok=True)
     (ASSETS / "banner.svg").write_text(banner_svg(), encoding="utf-8")
     (ASSETS / "astronaut.svg").write_text(astronaut_svg(), encoding="utf-8")
     (ASSETS / "footer.svg").write_text(footer_svg(), encoding="utf-8")
     for slug, title, icon in SECTIONS:
         (ASSETS / f"section-{slug}.svg").write_text(section_svg(title, icon), encoding="utf-8")
-    for p in PROJECTS:
-        if len(p[4]) > 50:
-            raise SystemExit(f"highlight too long for the card ({len(p[4])} > 50 chars): {p[4]}")
-        (ASSETS / "cards" / f"{p[0]}.svg").write_text(card_svg(*p), encoding="utf-8")
-    print(f"wrote banner, astronaut, footer, {len(SECTIONS)} section titles and {len(PROJECTS)} cards to {ASSETS}")
+    print(f"wrote banner, astronaut, footer, {len(SECTIONS)} section titles to {ASSETS}")
 
 
 if __name__ == "__main__":
