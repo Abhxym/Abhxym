@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="64" viewBox="0 0 900 64" role="img" aria-label="Featured projects">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#c084fc"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
-  <rect x="0" y="24" width="6" height="22" rx="3" fill="url(#g)"/>
-  <text x="20" y="42" style="font:800 24px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:url(#g)">Featured projects</text>
-  <rect x="284" y="34" width="616" height="2" rx="1" fill="url(#g)" opacity=".35"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="Featured projects">
+  <line x1="40" y1="28" x2="289" y2="28" stroke="#80808066"/>
+  <line x1="611" y1="28" x2="860" y2="28" stroke="#80808066"/>
+  <rect x="304.8" y="8" width="290.4" height="40" rx="6" fill="#000" stroke="#ffffff40"/>
+  <g transform="translate(322.8 18) scale(1.25)"><path d="M1.5 3A1.5 1.5 0 013 1.5h3.6l1.5 1.8H13A1.5 1.5 0 0114.5 4.8v7.7A1.5 1.5 0 0113 14H3a1.5 1.5 0 01-1.5-1.5z" fill="#fff"/></g>
+  <text x="352.8" y="34" style="font:700 20px 'Courier New', Consolas, 'Liberation Mono', monospace;fill:#fff">Featured projects</text>
 </svg>

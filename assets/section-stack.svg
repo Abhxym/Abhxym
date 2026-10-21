@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="64" viewBox="0 0 900 64" role="img" aria-label="Tech I work with">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#f472b6"/><stop offset="1" stop-color="#fbbf24"/></linearGradient></defs>
-  <rect x="0" y="24" width="6" height="22" rx="3" fill="url(#g)"/>
-  <text x="20" y="42" style="font:800 24px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:url(#g)">Tech I work with</text>
-  <rect x="270" y="34" width="630" height="2" rx="1" fill="url(#g)" opacity=".35"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="Technologies">
+  <line x1="40" y1="28" x2="322" y2="28" stroke="#80808066"/>
+  <line x1="578" y1="28" x2="860" y2="28" stroke="#80808066"/>
+  <rect x="337.8" y="8" width="224.4" height="40" rx="6" fill="#000" stroke="#ffffff40"/>
+  <g transform="translate(355.8 18) scale(1.25)"><path d="M5.7 3.3L1 8l4.7 4.7 1.1-1.1L3.2 8l3.6-3.6zm4.6 0L9.2 4.4 12.8 8l-3.6 3.6 1.1 1.1L15 8z" fill="#fff"/></g>
+  <text x="385.8" y="34" style="font:700 20px 'Courier New', Consolas, 'Liberation Mono', monospace;fill:#fff">Technologies</text>
 </svg>

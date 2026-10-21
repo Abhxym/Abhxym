@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="230" viewBox="0 0 495 230" role="img" aria-label="Contribution streaks">
+  <style>
+    .big{font:700 30px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#ffffff}
+    .lbl{font:600 14px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#ffffff}
+    .sub{font:400 11.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#9a9a9a}
+  </style>
+  <rect x=".5" y=".5" width="494" height="229" rx="8" fill="#050505" stroke="#ffffff2e"/>
+  <line x1="165" y1="30" x2="165" y2="200" stroke="#ffffff26"/>
+  <line x1="330" y1="30" x2="330" y2="200" stroke="#ffffff26"/>
+
+  <g text-anchor="middle">
+    <text x="82.5" y="104" class="big">268</text>
+    <text x="82.5" y="138" class="lbl">Total Contributions</text>
+    <text x="82.5" y="164" class="sub">Nov 20, 2023 - Present</text>
+
+    <g transform="translate(247.5,82)">
+      <circle r="40" fill="none" stroke="#ffffff" stroke-width="5"/>
+      <path d="M-9 -44 q9 -16 6 -24 q14 10 12 26" fill="#050505" stroke="#ffffff" stroke-width="3"/>
+      <text y="11" class="big">1</text>
+    </g>
+    <text x="247.5" y="160" class="lbl" style="font-weight:700">Current Streak</text>
+    <text x="247.5" y="184" class="sub">Today</text>
+
+    <text x="412.5" y="104" class="big">5</text>
+    <text x="412.5" y="138" class="lbl">Longest Streak</text>
+    <text x="412.5" y="164" class="sub">Jun 28, 2026 - Jul 2, 2026</text>
+  </g>
+</svg>

@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="64" viewBox="0 0 900 64" role="img" aria-label="In action">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#22d3ee"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
-  <rect x="0" y="24" width="6" height="22" rx="3" fill="url(#g)"/>
-  <text x="20" y="42" style="font:800 24px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:url(#g)">In action</text>
-  <rect x="168" y="34" width="732" height="2" rx="1" fill="url(#g)" opacity=".35"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="In action">
+  <line x1="40" y1="28" x2="342" y2="28" stroke="#80808066"/>
+  <line x1="558" y1="28" x2="860" y2="28" stroke="#80808066"/>
+  <rect x="357.6" y="8" width="184.8" height="40" rx="6" fill="#000" stroke="#ffffff40"/>
+  <g transform="translate(375.6 18) scale(1.25)"><path d="M1 4.5A1.5 1.5 0 012.5 3h7A1.5 1.5 0 0111 4.5v1.3l4-2.3v9l-4-2.3v1.3A1.5 1.5 0 019.5 13h-7A1.5 1.5 0 011 11.5z" fill="#fff"/></g>
+  <text x="405.6" y="34" style="font:700 20px 'Courier New', Consolas, 'Liberation Mono', monospace;fill:#fff">In action</text>
 </svg>

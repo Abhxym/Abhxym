@@ -1,13 +1,15 @@
 """
-Builds the SVG assets used by the profile README.
+Builds the black & white SVG artwork used by the profile README.
 
     python scripts/build_assets.py
 
-Edit PROJECTS / ROLES below and re-run; everything in assets/ is regenerated.
-SVGs use only inline styles and system fonts so they render inside GitHub's <img> sandbox.
+Edit HANDLE / PROJECTS / SECTIONS below and re-run; assets/ is regenerated.
+Statistics cards are built separately by scripts/build_stats.py (daily GitHub Action).
+Every SVG carries its own dark background, so it reads the same in GitHub's light and dark themes.
 """
 from __future__ import annotations
 
+import random
 import textwrap
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -15,50 +17,54 @@ from xml.sax.saxutils import escape
 ROOT = Path(__file__).resolve().parent.parent
 ASSETS = ROOT / "assets"
 FONT = "'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
-MONO = "'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace"
+MONO = "'Courier New', Consolas, 'Liberation Mono', monospace"
 
 HANDLE = "Abhxym"
-ROLES = [
-    "AI / ML Engineer",
-    "Agentic &amp; RAG systems",
-    "Big-data pipelines",
-    "Full-stack apps that ship",
-]
 
-# slug, title, category, accent (start, end), description, highlight, chips, badge
+# slug, title, category, description, highlight, chips, badge
 PROJECTS = [
-    ("clipmind", "ClipMind AI", "GENERATIVE AI · AGENTS", ("#a855f7", "#f59e0b"),
+    ("clipmind", "ClipMind AI", "GENERATIVE AI · AGENTS",
      "13-agent LangGraph pipeline that turns raw video clips and a one-line brief into a captioned, platform-ready reel.",
      "RAG brand rules · review loop · live agent graph",
      ["LangGraph", "Gemini", "Whisper", "FAISS", "FFmpeg", "React"], None),
-    ("supplychain-x", "SUPPLYCHAIN-X", "BIG DATA · GRAPHS", ("#06b6d4", "#3b82f6"),
+    ("supplychain-x", "SUPPLYCHAIN-X", "BIG DATA · GRAPHS",
      "Distributed platform that traces how a disaster cascades through global supply chains, hop by hop.",
      "48,827 disasters · 330k trade rows · Kafka live",
      ["HDFS", "Spark", "Kafka", "Neo4j", "FastAPI", "D3"], None),
-    ("redrob-ai", "RedRob AI", "SEARCH · RANKING", ("#ef4444", "#f97316"),
+    ("redrob-ai", "RedRob AI", "SEARCH · RANKING",
      "Explainable candidate ranking over 100k profiles: BM25 + FAISS fused with RRF, JD-aware signals and a cross-encoder rerank.",
      "No LLM · CPU only · every score explained",
      ["BM25", "FAISS", "Cross-encoder", "FastAPI", "React"], None),
-    ("insightflow", "InsightFlow", "NLP · RAG ANALYTICS", ("#10b981", "#06b6d4"),
+    ("insightflow", "InsightFlow", "NLP · RAG ANALYTICS",
      "Survey analytics where non-technical users ask questions in plain English and get cited answers.",
      "Themes + sentiment · RAG agent with citations",
      ["Gemini", "Pinecone", "FastAPI", "React", "Node.js", "MySQL"], None),
-    ("glaucoma-ai", "Glaucoma AI", "MEDICAL IMAGING", ("#3b82f6", "#a855f7"),
+    ("glaucoma-ai", "Glaucoma AI", "MEDICAL IMAGING",
      "Multi-stage clinical decision support that screens retinal fundus images for glaucoma, with a dashboard for doctors.",
      "YOLOv8 → UNet++ / transformer → XGBoost",
      ["PyTorch", "YOLOv8", "UNet++", "XGBoost", "Next.js"], None),
-    ("aquaalert", "AquaAlert AI", "CLIMATE · EXPLAINABLE ML", ("#0ea5e9", "#22d3ee"),
+    ("aquaalert", "AquaAlert AI", "CLIMATE · EXPLAINABLE ML",
      "Flood detection and early warning from telemetry, rainfall and satellite imagery, with explanations for every prediction.",
      "XGBoost · LSTM · U-Net · SHAP + Grad-CAM",
      ["TensorFlow", "XGBoost", "SHAP", "FastAPI", "React"], None),
-    ("schoolmonitor", "School Monitor", "FULL-STACK · GOV-TECH", ("#f59e0b", "#ef4444"),
+    ("schoolmonitor", "School Monitor", "FULL-STACK · GOV-TECH",
      "Monitoring system for 12 Zilla Parishad schools: attendance, events, reports, GR publishing and a public transparency page.",
      "Role-based access · Google OAuth · deployed",
      ["Next.js", "Express", "MongoDB", "JWT"], "LIVE"),
-    ("system-design-atlas", "System Design Atlas", "INTERACTIVE REFERENCE", ("#8b5cf6", "#ec4899"),
+    ("system-design-atlas", "System Design Atlas", "INTERACTIVE REFERENCE",
      "Animated, interactive reference for 111 system design concepts with trade-offs, real examples and interview prep.",
      "16 domains · 10 classic systems, step by step",
      ["HTML", "Canvas", "JavaScript"], "LIVE"),
+]
+
+# slug, title, icon path (16x16 viewBox)
+SECTIONS = [
+    ("about", "About me", "M8 8a3.5 3.5 0 100-7 3.5 3.5 0 000 7zm0 1.5c-3.3 0-6 1.8-6 4v1.5h12V13.5c0-2.2-2.7-4-6-4z"),
+    ("projects", "Featured projects", "M1.5 3A1.5 1.5 0 013 1.5h3.6l1.5 1.8H13A1.5 1.5 0 0114.5 4.8v7.7A1.5 1.5 0 0113 14H3a1.5 1.5 0 01-1.5-1.5z"),
+    ("spotlight", "In action", "M1 4.5A1.5 1.5 0 012.5 3h7A1.5 1.5 0 0111 4.5v1.3l4-2.3v9l-4-2.3v1.3A1.5 1.5 0 019.5 13h-7A1.5 1.5 0 011 11.5z"),
+    ("stack", "Technologies", "M5.7 3.3L1 8l4.7 4.7 1.1-1.1L3.2 8l3.6-3.6zm4.6 0L9.2 4.4 12.8 8l-3.6 3.6 1.1 1.1L15 8z"),
+    ("stats", "Statistics", "M1 14.5h14V16H1zM2.5 8h2.5v5.5H2.5zm4.25-4h2.5v9.5h-2.5zM11 6h2.5v7.5H11z"),
+    ("more", "More projects", "M2 2.5h5v5H2zm7 0h5v5H9zM2 9.5h5v5H2zm7 0h5v5H9z"),
 ]
 
 
@@ -66,184 +72,182 @@ def chip_width(text: str) -> float:
     return len(text) * 6.9 + 22
 
 
-def card_svg(slug, title, category, accent, desc, highlight, chips, badge) -> str:
+def card_svg(slug, title, category, desc, highlight, chips, badge) -> str:
     w, h = 440, 236
-    a1, a2 = accent
     lines = textwrap.wrap(desc, 56)[:3]
     desc_svg = "".join(
         f'<text x="28" y="{104 + i * 20}" class="desc">{escape(line)}</text>' for i, line in enumerate(lines)
     )
     hl_y = 104 + len(lines) * 20 + 10
-    x = 28.0
-    chips_svg = ""
+    x, chips_svg = 28.0, ""
     for c in chips:
         cw = chip_width(c)
         if x + cw > w - 24:
             break
         chips_svg += (
-            f'<rect x="{x:.1f}" y="194" width="{cw:.1f}" height="24" rx="12" class="chip"/>'
+            f'<rect x="{x:.1f}" y="194" width="{cw:.1f}" height="24" rx="4" class="chip"/>'
             f'<text x="{x + cw / 2:.1f}" y="210.5" class="chipt" text-anchor="middle">{escape(c)}</text>'
         )
         x += cw + 8
     badge_svg = ""
     if badge:
         badge_svg = (
-            f'<rect x="{w - 84}" y="22" width="58" height="22" rx="11" fill="#10b98122" stroke="#10b981" stroke-width="1"/>'
-            f'<circle cx="{w - 72}" cy="33" r="3.5" fill="#10b981"><animate attributeName="opacity" values="1;.25;1" dur="1.8s" repeatCount="indefinite"/></circle>'
-            f'<text x="{w - 46}" y="37.5" text-anchor="middle" style="font:700 10.5px {FONT};fill:#34d399;letter-spacing:1px">{badge}</text>'
+            f'<rect x="{w - 84}" y="22" width="58" height="22" rx="4" fill="#ffffff" />'
+            f'<circle cx="{w - 72}" cy="33" r="3.5" fill="#000"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>'
+            f'<text x="{w - 46}" y="37.5" text-anchor="middle" style="font:700 10.5px {MONO};fill:#000;letter-spacing:1px">{badge}</text>'
         )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}: {escape(desc)}">
   <defs>
-    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{a1}"/><stop offset="1" stop-color="{a2}"/></linearGradient>
-    <radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="{a1}" stop-opacity=".28"/><stop offset=".6" stop-color="{a2}" stop-opacity="0"/></radialGradient>
-    <clipPath id="clip"><rect width="{w}" height="{h}" rx="18"/></clipPath>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".08"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
     <style>
-      .cat{{font:700 10.5px {FONT};letter-spacing:1.6px;fill:{a1}}}
-      .title{{font:800 25px {FONT};fill:#f8fafc}}
-      .desc{{font:400 13.5px {FONT};fill:#a8b3c7}}
-      .hl{{font:600 12px {MONO};fill:{a2}}}
-      .chip{{fill:#ffffff0d;stroke:#ffffff1f;stroke-width:1}}
-      .chipt{{font:600 11.5px {FONT};fill:#dbe3ef}}
+      .cat{{font:700 11px {MONO};letter-spacing:1.5px;fill:#a3a3a3}}
+      .title{{font:800 25px {FONT};fill:#ffffff}}
+      .desc{{font:400 13.5px {FONT};fill:#bdbdbd}}
+      .hl{{font:700 12px {MONO};fill:#ffffff}}
+      .chip{{fill:#000;stroke:#ffffff55;stroke-width:1}}
+      .chipt{{font:600 11.5px {FONT};fill:#e5e5e5}}
     </style>
   </defs>
-  <g clip-path="url(#clip)">
-    <rect width="{w}" height="{h}" fill="#0b1020"/>
-    <rect width="{w}" height="{h}" fill="url(#glow)"/>
-    <rect width="5" height="{h}" fill="url(#acc)"/>
-  </g>
-  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="17.5" fill="none" stroke="#ffffff1a"/>
+  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="#050505" stroke="#ffffff33"/>
+  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="url(#sheen)"/>
   <text x="28" y="38" class="cat">{escape(category)}</text>
   {badge_svg}
   <text x="28" y="74" class="title">{escape(title)}</text>
   {desc_svg}
-  <text x="28" y="{hl_y}" class="hl">▸ {escape(highlight)}</text>
+  <text x="28" y="{hl_y}" class="hl">&gt; {escape(highlight)}</text>
   {chips_svg}
 </svg>
 '''
 
 
-def header_svg() -> str:
+def banner_svg() -> str:
+    """Misty monochrome landscape with a winding river, like a black & white photograph."""
     w, h = 1200, 340
-    n = len(ROLES)
-    period = n * 3
-    role_svg = ""
-    fade = 0.25 / period  # 0.25 s cross-fade
-    for i, role in enumerate(ROLES):
-        start, end = i / n, (i + 1) / n
-        if i == 0:
-            kt, vals = f"0;{fade:.4f};{end - fade:.4f};{end:.4f};1", "0;1;1;0;0"
-        elif i == n - 1:
-            kt, vals = f"0;{start:.4f};{start + fade:.4f};{1 - fade:.4f};1", "0;0;1;1;0"
-        else:
-            kt, vals = f"0;{start:.4f};{start + fade:.4f};{end - fade:.4f};{end:.4f};1", "0;0;1;1;0;0"
-        role_svg += (
-            f'<text x="80" y="226" class="role" opacity="0">{role}'
-            f'<animate attributeName="opacity" values="{vals}" keyTimes="{kt}" dur="{period}s" repeatCount="indefinite"/>'
-            f'</text>'
-        )
-
-    # Constellation of nodes on the right: an "agent graph"
-    nodes = [(820, 90), (930, 60), (1050, 100), (1110, 190), (990, 170), (880, 200), (960, 270), (1080, 280), (800, 260)]
-    edges = [(0, 1), (1, 2), (2, 3), (1, 4), (4, 3), (0, 5), (5, 4), (5, 6), (6, 7), (4, 7), (8, 5), (8, 6), (2, 4)]
-    edges_svg = "".join(
-        f'<line x1="{nodes[a][0]}" y1="{nodes[a][1]}" x2="{nodes[b][0]}" y2="{nodes[b][1]}" class="edge"/>' for a, b in edges
-    )
-    pulses = "".join(
-        f'<circle r="3.2" fill="#fbbf24"><animateMotion dur="{2.6 + (i % 4) * 0.7:.1f}s" begin="{i * 0.45:.2f}s" repeatCount="indefinite" '
-        f'path="M{nodes[a][0]},{nodes[a][1]} L{nodes[b][0]},{nodes[b][1]}"/></circle>'
-        for i, (a, b) in enumerate(edges[::2])
-    )
-    nodes_svg = "".join(
-        f'<circle cx="{x}" cy="{y}" r="{7 if i % 3 else 10}" class="node">'
-        f'<animate attributeName="r" values="{7 if i % 3 else 10};{9 if i % 3 else 13};{7 if i % 3 else 10}" dur="{3 + i % 3}s" repeatCount="indefinite"/></circle>'
-        for i, (x, y) in enumerate(nodes)
-    )
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Hi, I'm {HANDLE}. AI/ML engineer building agentic, retrieval and data systems.">
+    title = f"Welcome to {HANDLE}'s GitHub"
+    cursor_x = 600 + len(title) * 10.9
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#070b18"/><stop offset="1" stop-color="#130a26"/></linearGradient>
-    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#c084fc"/><stop offset=".5" stop-color="#f472b6"/><stop offset="1" stop-color="#fbbf24"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-0.3 0;0.3 0;-0.3 0" dur="8s" repeatCount="indefinite"/>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e9e9e9"/><stop offset=".55" stop-color="#bdbdbd"/><stop offset="1" stop-color="#8c8c8c"/>
     </linearGradient>
-    <radialGradient id="b1"><stop offset="0" stop-color="#7c3aed" stop-opacity=".55"/><stop offset="1" stop-color="#7c3aed" stop-opacity="0"/></radialGradient>
-    <radialGradient id="b2"><stop offset="0" stop-color="#f59e0b" stop-opacity=".35"/><stop offset="1" stop-color="#f59e0b" stop-opacity="0"/></radialGradient>
-    <radialGradient id="b3"><stop offset="0" stop-color="#06b6d4" stop-opacity=".35"/><stop offset="1" stop-color="#06b6d4" stop-opacity="0"/></radialGradient>
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#ffffff" stroke-opacity=".045"/></pattern>
-    <clipPath id="clip"><rect width="{w}" height="{h}" rx="24"/></clipPath>
-    <style>
-      .hi{{font:600 22px {FONT};fill:#94a3b8;letter-spacing:.5px}}
-      .name{{font:900 76px {FONT};fill:url(#name);letter-spacing:-1.5px}}
-      .role{{font:600 28px {FONT};fill:#e2e8f0}}
-      .tag{{font:500 15px {MONO};fill:#64748b}}
-      .edge{{stroke:#a78bfa;stroke-opacity:.35;stroke-width:1.5}}
-      .node{{fill:#0b1020;stroke:#c084fc;stroke-width:2.5}}
-    </style>
+    <linearGradient id="river" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#f2f2f2"/><stop offset="1" stop-color="#9a9a9a"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".85"/>
+    </linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="6"/></filter>
+    <clipPath id="clip"><rect width="{w}" height="{h}" rx="6"/></clipPath>
   </defs>
   <g clip-path="url(#clip)">
-    <rect width="{w}" height="{h}" fill="url(#bg)"/>
-    <rect width="{w}" height="{h}" fill="url(#grid)"/>
-    <circle cx="180" cy="40" r="260" fill="url(#b1)"><animate attributeName="cx" values="180;260;180" dur="14s" repeatCount="indefinite"/></circle>
-    <circle cx="1050" cy="320" r="240" fill="url(#b2)"><animate attributeName="cy" values="320;270;320" dur="11s" repeatCount="indefinite"/></circle>
-    <circle cx="700" cy="-20" r="220" fill="url(#b3)"><animate attributeName="cx" values="700;620;700" dur="13s" repeatCount="indefinite"/></circle>
-    {edges_svg}
-    {pulses}
-    {nodes_svg}
+    <rect width="{w}" height="{h}" fill="url(#sky)"/>
+    <path fill="#a6a6a6" d="M0 230 L120 196 L230 214 L360 172 L470 204 L600 166 L740 200 L860 176 L980 206 L1100 182 L1200 200 V340 H0Z"/>
+    <g filter="url(#blur)" opacity=".7">
+      <ellipse cx="300" cy="215" rx="380" ry="22" fill="#e6e6e6"><animate attributeName="cx" values="300;380;300" dur="18s" repeatCount="indefinite"/></ellipse>
+      <ellipse cx="920" cy="208" rx="340" ry="18" fill="#e6e6e6"><animate attributeName="cx" values="920;840;920" dur="22s" repeatCount="indefinite"/></ellipse>
+    </g>
+    <path fill="#6e6e6e" d="M0 262 C 140 226 260 248 380 232 S 620 216 760 238 S 1020 222 1200 240 V340 H0Z"/>
+    <path fill="#3c3c3c" d="M0 290 C 160 262 300 280 460 268 S 760 256 900 276 S 1100 268 1200 282 V340 H0Z"/>
+    <path fill="#161616" d="M0 316 C 200 298 380 312 600 304 S 1000 296 1200 312 V340 H0Z"/>
+    <path fill="url(#river)" opacity=".95" d="M598 236 C 640 248 560 262 610 276 C 680 294 520 306 600 322 C 660 334 700 340 720 340 L 470 340 C 520 330 560 318 530 306 C 480 290 640 280 580 266 C 540 256 600 244 590 236 Z"/>
+    <rect width="{w}" height="{h}" fill="url(#fade)" opacity=".35"/>
   </g>
-  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="23.5" fill="none" stroke="#ffffff1f"/>
-  <text x="82" y="104" class="hi">Hi there, I'm</text>
-  <text x="76" y="180" class="name">{HANDLE}</text>
-  {role_svg}
-  <text x="82" y="282" class="tag">// LLM agents · RAG &amp; search · data platforms · full-stack</text>
+  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="6" fill="none" stroke="#ffffff33"/>
+  <text x="600" y="108" text-anchor="middle" style="font:700 34px {MONO};fill:#111;letter-spacing:1px">{escape(title)}</text>
+  <rect x="{cursor_x:.0f}" y="84" width="14" height="28" fill="#111"><animate attributeName="opacity" values="1;1;0;0" keyTimes="0;.5;.5;1" dur="1.1s" repeatCount="indefinite"/></rect>
+  <text x="600" y="150" text-anchor="middle" style="font:700 24px {MONO};fill:#111">&lt;/&gt;</text>
 </svg>
 '''
 
 
-def section_svg(title: str, slug: str, a1: str, a2: str) -> str:
-    w, h = 900, 64
+def astronaut_svg() -> str:
+    """A small astronaut drifting through a star field (About me illustration)."""
+    w, h = 320, 320
+    rnd = random.Random(7)
+    stars = "".join(
+        f'<circle cx="{rnd.uniform(6, w - 6):.1f}" cy="{rnd.uniform(6, h - 6):.1f}" r="{rnd.choice([0.6, 0.9, 1.2, 1.6])}" fill="#fff">'
+        f'<animate attributeName="opacity" values="1;.15;1" dur="{rnd.uniform(1.8, 4.5):.1f}s" begin="{rnd.uniform(0, 3):.1f}s" repeatCount="indefinite"/></circle>'
+        for _ in range(70)
+    )
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="An astronaut floating among the stars">
+  <rect width="{w}" height="{h}" rx="6" fill="#000"/>
+  {stars}
+  <circle cx="262" cy="262" r="34" fill="#1b1b1b" stroke="#ffffff40"/>
+  <ellipse cx="262" cy="262" rx="56" ry="12" fill="none" stroke="#ffffff55" stroke-width="2" transform="rotate(-18 262 262)"/>
+  <g>
+    <animateTransform attributeName="transform" type="translate" values="0 0; 8 -12; 0 0" dur="6s" repeatCount="indefinite"/>
+    <g transform="translate(150 150) rotate(-20)">
+      <animateTransform attributeName="transform" type="rotate" values="-20 0 0;-8 0 0;-20 0 0" dur="9s" additive="sum" repeatCount="indefinite"/>
+      <!-- tether -->
+      <path d="M-26 26 C -70 60 -90 110 -150 120" fill="none" stroke="#ffffff66" stroke-width="1.5" stroke-dasharray="3 4"/>
+      <!-- backpack -->
+      <rect x="-24" y="-10" width="48" height="54" rx="10" fill="#9e9e9e"/>
+      <!-- legs -->
+      <rect x="-20" y="34" width="16" height="34" rx="7" fill="#e8e8e8" transform="rotate(12 -12 34)"/>
+      <rect x="4" y="34" width="16" height="34" rx="7" fill="#e8e8e8" transform="rotate(-18 12 34)"/>
+      <!-- body -->
+      <rect x="-20" y="-6" width="40" height="48" rx="12" fill="#f4f4f4"/>
+      <rect x="-9" y="8" width="18" height="12" rx="2" fill="#2b2b2b"/>
+      <circle cx="-4" cy="14" r="1.6" fill="#fff"/><circle cx="3" cy="14" r="1.6" fill="#bdbdbd"/>
+      <!-- arms -->
+      <rect x="-38" y="0" width="16" height="34" rx="7" fill="#e8e8e8" transform="rotate(38 -30 4)">
+        <animateTransform attributeName="transform" type="rotate" values="38 -30 4;20 -30 4;38 -30 4" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="22" y="0" width="16" height="34" rx="7" fill="#e8e8e8" transform="rotate(-48 30 4)"/>
+      <!-- helmet -->
+      <circle cx="0" cy="-26" r="24" fill="#f4f4f4"/>
+      <ellipse cx="2" cy="-26" rx="16" ry="12" fill="#111"/>
+      <ellipse cx="-4" cy="-31" rx="6" ry="3" fill="#ffffff" opacity=".6"/>
+    </g>
+  </g>
+</svg>
+'''
+
+
+def section_svg(title: str, icon: str) -> str:
+    w, h = 900, 56
+    tw = len(title) * 13.2 + 66
+    x0 = (w - tw) / 2
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="{a1}"/><stop offset="1" stop-color="{a2}"/></linearGradient></defs>
-  <rect x="0" y="24" width="6" height="22" rx="3" fill="url(#g)"/>
-  <text x="20" y="42" style="font:800 24px {FONT};fill:url(#g)">{escape(title)}</text>
-  <rect x="{20 + len(title) * 14.5 + 18:.0f}" y="34" width="{max(0, w - (20 + len(title) * 14.5 + 18)):.0f}" height="2" rx="1" fill="url(#g)" opacity=".35"/>
+  <line x1="40" y1="28" x2="{x0 - 16:.0f}" y2="28" stroke="#80808066"/>
+  <line x1="{x0 + tw + 16:.0f}" y1="28" x2="{w - 40}" y2="28" stroke="#80808066"/>
+  <rect x="{x0:.1f}" y="8" width="{tw:.1f}" height="40" rx="6" fill="#000" stroke="#ffffff40"/>
+  <g transform="translate({x0 + 18:.1f} 18) scale(1.25)"><path d="{icon}" fill="#fff"/></g>
+  <text x="{x0 + 48:.1f}" y="34" style="font:700 20px {MONO};fill:#fff">{escape(title)}</text>
 </svg>
 '''
 
 
 def footer_svg() -> str:
-    w, h = 1200, 120
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Thanks for visiting">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset=".5" stop-color="#ec4899"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
-  <path fill="url(#g)" opacity=".9" d="M0 60 C 200 10 400 110 600 60 S 1000 10 1200 60 V120 H0Z">
-    <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
-      M0 60 C 200 10 400 110 600 60 S 1000 10 1200 60 V120 H0Z;
-      M0 70 C 200 110 400 20 600 70 S 1000 110 1200 50 V120 H0Z;
-      M0 60 C 200 10 400 110 600 60 S 1000 10 1200 60 V120 H0Z"/>
+    w, h = 1200, 110
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="">
+  <path fill="#2a2a2a" d="M0 55 C 200 15 400 95 600 55 S 1000 15 1200 55 V110 H0Z">
+    <animate attributeName="d" dur="12s" repeatCount="indefinite" values="
+      M0 55 C 200 15 400 95 600 55 S 1000 15 1200 55 V110 H0Z;
+      M0 65 C 200 95 400 25 600 65 S 1000 95 1200 45 V110 H0Z;
+      M0 55 C 200 15 400 95 600 55 S 1000 15 1200 55 V110 H0Z"/>
   </path>
-  <path fill="#0b1020" opacity=".55" d="M0 85 C 300 55 500 115 800 80 S 1100 60 1200 85 V120 H0Z"/>
+  <path fill="#000" d="M0 80 C 300 50 500 105 800 74 S 1100 58 1200 80 V110 H0Z"/>
+  <text x="600" y="100" text-anchor="middle" style="font:700 13px {MONO};fill:#bdbdbd;letter-spacing:2px">THANKS FOR VISITING</text>
 </svg>
 '''
 
 
-SECTIONS = [
-    ("Featured projects", "projects", "#c084fc", "#f59e0b"),
-    ("In action", "spotlight", "#22d3ee", "#a78bfa"),
-    ("Tech I work with", "stack", "#f472b6", "#fbbf24"),
-    ("More on my GitHub", "more", "#34d399", "#22d3ee"),
-    ("How I build", "approach", "#fbbf24", "#f472b6"),
-]
-
-
 def main() -> None:
+    for old in ASSETS.glob("section-*.svg"):
+        old.unlink()
+    (ASSETS / "header.svg").unlink(missing_ok=True)
     (ASSETS / "cards").mkdir(parents=True, exist_ok=True)
-    (ASSETS / "header.svg").write_text(header_svg(), encoding="utf-8")
+    (ASSETS / "banner.svg").write_text(banner_svg(), encoding="utf-8")
+    (ASSETS / "astronaut.svg").write_text(astronaut_svg(), encoding="utf-8")
     (ASSETS / "footer.svg").write_text(footer_svg(), encoding="utf-8")
-    for title, slug, a1, a2 in SECTIONS:
-        (ASSETS / f"section-{slug}.svg").write_text(section_svg(title, slug, a1, a2), encoding="utf-8")
+    for slug, title, icon in SECTIONS:
+        (ASSETS / f"section-{slug}.svg").write_text(section_svg(title, icon), encoding="utf-8")
     for p in PROJECTS:
-        if len(p[5]) > 50:
-            raise SystemExit(f"highlight too long for the card ({len(p[5])} > 50 chars): {p[5]}")
+        if len(p[4]) > 50:
+            raise SystemExit(f"highlight too long for the card ({len(p[4])} > 50 chars): {p[4]}")
         (ASSETS / "cards" / f"{p[0]}.svg").write_text(card_svg(*p), encoding="utf-8")
-    print(f"wrote {len(PROJECTS)} cards, header, footer and {len(SECTIONS)} section titles to {ASSETS}")
+    print(f"wrote banner, astronaut, footer, {len(SECTIONS)} section titles and {len(PROJECTS)} cards to {ASSETS}")
 
 
 if __name__ == "__main__":

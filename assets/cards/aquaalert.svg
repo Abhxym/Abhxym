@@ -1,27 +1,21 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="236" viewBox="0 0 440 236" role="img" aria-label="AquaAlert AI: Flood detection and early warning from telemetry, rainfall and satellite imagery, with explanations for every prediction.">
   <defs>
-    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0ea5e9"/><stop offset="1" stop-color="#22d3ee"/></linearGradient>
-    <radialGradient id="glow" cx="1" cy="0" r="1"><stop offset="0" stop-color="#0ea5e9" stop-opacity=".28"/><stop offset=".6" stop-color="#22d3ee" stop-opacity="0"/></radialGradient>
-    <clipPath id="clip"><rect width="440" height="236" rx="18"/></clipPath>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".08"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
     <style>
-      .cat{font:700 10.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;letter-spacing:1.6px;fill:#0ea5e9}
-      .title{font:800 25px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#f8fafc}
-      .desc{font:400 13.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#a8b3c7}
-      .hl{font:600 12px 'Cascadia Code', 'SFMono-Regular', Consolas, 'Liberation Mono', monospace;fill:#22d3ee}
-      .chip{fill:#ffffff0d;stroke:#ffffff1f;stroke-width:1}
-      .chipt{font:600 11.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#dbe3ef}
+      .cat{font:700 11px 'Courier New', Consolas, 'Liberation Mono', monospace;letter-spacing:1.5px;fill:#a3a3a3}
+      .title{font:800 25px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#ffffff}
+      .desc{font:400 13.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#bdbdbd}
+      .hl{font:700 12px 'Courier New', Consolas, 'Liberation Mono', monospace;fill:#ffffff}
+      .chip{fill:#000;stroke:#ffffff55;stroke-width:1}
+      .chipt{font:600 11.5px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#e5e5e5}
     </style>
   </defs>
-  <g clip-path="url(#clip)">
-    <rect width="440" height="236" fill="#0b1020"/>
-    <rect width="440" height="236" fill="url(#glow)"/>
-    <rect width="5" height="236" fill="url(#acc)"/>
-  </g>
-  <rect x=".5" y=".5" width="439" height="235" rx="17.5" fill="none" stroke="#ffffff1a"/>
+  <rect x=".5" y=".5" width="439" height="235" rx="10" fill="#050505" stroke="#ffffff33"/>
+  <rect x=".5" y=".5" width="439" height="235" rx="10" fill="url(#sheen)"/>
   <text x="28" y="38" class="cat">CLIMATE · EXPLAINABLE ML</text>
   
   <text x="28" y="74" class="title">AquaAlert AI</text>
   <text x="28" y="104" class="desc">Flood detection and early warning from telemetry,</text><text x="28" y="124" class="desc">rainfall and satellite imagery, with explanations for</text><text x="28" y="144" class="desc">every prediction.</text>
-  <text x="28" y="174" class="hl">▸ XGBoost · LSTM · U-Net · SHAP + Grad-CAM</text>
-  <rect x="28.0" y="194" width="91.0" height="24" rx="12" class="chip"/><text x="73.5" y="210.5" class="chipt" text-anchor="middle">TensorFlow</text><rect x="127.0" y="194" width="70.3" height="24" rx="12" class="chip"/><text x="162.2" y="210.5" class="chipt" text-anchor="middle">XGBoost</text><rect x="205.3" y="194" width="49.6" height="24" rx="12" class="chip"/><text x="230.1" y="210.5" class="chipt" text-anchor="middle">SHAP</text><rect x="262.9" y="194" width="70.3" height="24" rx="12" class="chip"/><text x="298.1" y="210.5" class="chipt" text-anchor="middle">FastAPI</text><rect x="341.2" y="194" width="56.5" height="24" rx="12" class="chip"/><text x="369.5" y="210.5" class="chipt" text-anchor="middle">React</text>
+  <text x="28" y="174" class="hl">&gt; XGBoost · LSTM · U-Net · SHAP + Grad-CAM</text>
+  <rect x="28.0" y="194" width="91.0" height="24" rx="4" class="chip"/><text x="73.5" y="210.5" class="chipt" text-anchor="middle">TensorFlow</text><rect x="127.0" y="194" width="70.3" height="24" rx="4" class="chip"/><text x="162.2" y="210.5" class="chipt" text-anchor="middle">XGBoost</text><rect x="205.3" y="194" width="49.6" height="24" rx="4" class="chip"/><text x="230.1" y="210.5" class="chipt" text-anchor="middle">SHAP</text><rect x="262.9" y="194" width="70.3" height="24" rx="4" class="chip"/><text x="298.1" y="210.5" class="chipt" text-anchor="middle">FastAPI</text><rect x="341.2" y="194" width="56.5" height="24" rx="4" class="chip"/><text x="369.5" y="210.5" class="chipt" text-anchor="middle">React</text>
 </svg>

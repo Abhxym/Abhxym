@@ -1,10 +1,10 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="Thanks for visiting">
-  <defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset=".5" stop-color="#ec4899"/><stop offset="1" stop-color="#f59e0b"/></linearGradient></defs>
-  <path fill="url(#g)" opacity=".9" d="M0 60 C 200 10 400 110 600 60 S 1000 10 1200 60 V120 H0Z">
-    <animate attributeName="d" dur="10s" repeatCount="indefinite" values="
-      M0 60 C 200 10 400 110 600 60 S 1000 10 1200 60 V120 H0Z;
-      M0 70 C 200 110 400 20 600 70 S 1000 110 1200 50 V120 H0Z;
-      M0 60 C 200 10 400 110 600 60 S 1000 10 1200 60 V120 H0Z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110" role="img" aria-label="">
+  <path fill="#2a2a2a" d="M0 55 C 200 15 400 95 600 55 S 1000 15 1200 55 V110 H0Z">
+    <animate attributeName="d" dur="12s" repeatCount="indefinite" values="
+      M0 55 C 200 15 400 95 600 55 S 1000 15 1200 55 V110 H0Z;
+      M0 65 C 200 95 400 25 600 65 S 1000 95 1200 45 V110 H0Z;
+      M0 55 C 200 15 400 95 600 55 S 1000 15 1200 55 V110 H0Z"/>
   </path>
-  <path fill="#0b1020" opacity=".55" d="M0 85 C 300 55 500 115 800 80 S 1100 60 1200 85 V120 H0Z"/>
+  <path fill="#000" d="M0 80 C 300 50 500 105 800 74 S 1100 58 1200 80 V110 H0Z"/>
+  <text x="600" y="100" text-anchor="middle" style="font:700 13px 'Courier New', Consolas, 'Liberation Mono', monospace;fill:#bdbdbd;letter-spacing:2px">THANKS FOR VISITING</text>
 </svg>
