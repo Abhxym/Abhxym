@@ -4,7 +4,6 @@ Builds the black & white SVG artwork used by the profile README.
     python scripts/build_assets.py
 
 Edit HANDLE / PROJECTS / SECTIONS below and re-run; assets/ is regenerated.
-Statistics cards are built separately by scripts/build_stats.py (daily GitHub Action).
 Every SVG carries its own dark background, so it reads the same in GitHub's light and dark themes.
 """
 from __future__ import annotations
@@ -63,7 +62,6 @@ SECTIONS = [
     ("projects", "Featured projects", "M1.5 3A1.5 1.5 0 013 1.5h3.6l1.5 1.8H13A1.5 1.5 0 0114.5 4.8v7.7A1.5 1.5 0 0113 14H3a1.5 1.5 0 01-1.5-1.5z"),
     ("spotlight", "In action", "M1 4.5A1.5 1.5 0 012.5 3h7A1.5 1.5 0 0111 4.5v1.3l4-2.3v9l-4-2.3v1.3A1.5 1.5 0 019.5 13h-7A1.5 1.5 0 011 11.5z"),
     ("stack", "Technologies", "M5.7 3.3L1 8l4.7 4.7 1.1-1.1L3.2 8l3.6-3.6zm4.6 0L9.2 4.4 12.8 8l-3.6 3.6 1.1 1.1L15 8z"),
-    ("stats", "Statistics", "M1 14.5h14V16H1zM2.5 8h2.5v5.5H2.5zm4.25-4h2.5v9.5h-2.5zM11 6h2.5v7.5H11z"),
     ("more", "More projects", "M2 2.5h5v5H2zm7 0h5v5H9zM2 9.5h5v5H2zm7 0h5v5H9z"),
 ]
 
@@ -92,24 +90,25 @@ def card_svg(slug, title, category, desc, highlight, chips, badge) -> str:
     badge_svg = ""
     if badge:
         badge_svg = (
-            f'<rect x="{w - 84}" y="22" width="58" height="22" rx="4" fill="#ffffff" />'
-            f'<circle cx="{w - 72}" cy="33" r="3.5" fill="#000"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>'
-            f'<text x="{w - 46}" y="37.5" text-anchor="middle" style="font:700 10.5px {MONO};fill:#000;letter-spacing:1px">{badge}</text>'
+            f'<rect x="{w - 84}" y="22" width="58" height="22" rx="4" fill="#111111" />'
+            f'<circle cx="{w - 72}" cy="33" r="3.5" fill="#fff"><animate attributeName="opacity" values="1;.2;1" dur="1.6s" repeatCount="indefinite"/></circle>'
+            f'<text x="{w - 46}" y="37.5" text-anchor="middle" style="font:700 10.5px {MONO};fill:#fff;letter-spacing:1px">{badge}</text>'
         )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}: {escape(desc)}">
   <defs>
-    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".08"/><stop offset=".5" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+    <!-- Same light-grey sky tones as the banner -->
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ececec"/><stop offset=".6" stop-color="#d4d4d4"/><stop offset="1" stop-color="#bdbdbd"/></linearGradient>
     <style>
-      .cat{{font:700 11px {MONO};letter-spacing:1.5px;fill:#a3a3a3}}
-      .title{{font:800 25px {FONT};fill:#ffffff}}
-      .desc{{font:400 13.5px {FONT};fill:#bdbdbd}}
-      .hl{{font:700 12px {MONO};fill:#ffffff}}
-      .chip{{fill:#000;stroke:#ffffff55;stroke-width:1}}
-      .chipt{{font:600 11.5px {FONT};fill:#e5e5e5}}
+      .cat{{font:700 11px {MONO};letter-spacing:1.5px;fill:#5c5c5c}}
+      .title{{font:800 25px {FONT};fill:#111111}}
+      .desc{{font:400 13.5px {FONT};fill:#333333}}
+      .hl{{font:700 12px {MONO};fill:#111111}}
+      .chip{{fill:#f5f5f5;stroke:#11111140;stroke-width:1}}
+      .chipt{{font:600 11.5px {FONT};fill:#222222}}
     </style>
   </defs>
-  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="#050505" stroke="#ffffff33"/>
-  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="url(#sheen)"/>
+  <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="10" fill="url(#bg)" stroke="#00000033"/>
+  <path d="M0 {h - 46} C {w * .3:.0f} {h - 62} {w * .6:.0f} {h - 40} {w} {h - 56} V{h - 10} Q{w} {h} {w - 10} {h} H10 Q0 {h} 0 {h - 10}Z" fill="#a8a8a8" opacity=".35"/>
   <text x="28" y="38" class="cat">{escape(category)}</text>
   {badge_svg}
   <text x="28" y="74" class="title">{escape(title)}</text>

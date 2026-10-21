@@ -137,19 +137,6 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
 
 <br>
 
-<p align="center"><img src="assets/section-stats.svg" alt="Statistics" width="100%"></p>
-
-<p align="center">
-  <img src="assets/stats/stats.svg" alt="Abhxym's GitHub stats" width="49%">
-  <img src="assets/stats/streak.svg" alt="Contribution streaks" width="49%">
-</p>
-<p align="center">
-  <img src="assets/stats/graph.svg" alt="Contribution graph, last 31 days" width="98%">
-</p>
-<p align="center"><sub>Public activity, refreshed daily by a GitHub Action.</sub></p>
-
-<br>
-
 <p align="center"><img src="assets/section-more.svg" alt="More projects" width="100%"></p>
 
 | Project | What it is | Stack |

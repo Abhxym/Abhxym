@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="Statistics">
-  <line x1="40" y1="28" x2="335" y2="28" stroke="#80808066"/>
-  <line x1="565" y1="28" x2="860" y2="28" stroke="#80808066"/>
-  <rect x="351.0" y="8" width="198.0" height="40" rx="6" fill="#000" stroke="#ffffff40"/>
-  <g transform="translate(369.0 18) scale(1.25)"><path d="M1 14.5h14V16H1zM2.5 8h2.5v5.5H2.5zm4.25-4h2.5v9.5h-2.5zM11 6h2.5v7.5H11z" fill="#fff"/></g>
-  <text x="399.0" y="34" style="font:700 20px 'Courier New', Consolas, 'Liberation Mono', monospace;fill:#fff">Statistics</text>
-</svg>
