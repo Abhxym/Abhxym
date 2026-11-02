@@ -4,12 +4,12 @@
 
 <p align="center">
   <a href="https://github.com/Abhxym?tab=repositories"><img src="https://img.shields.io/badge/GitHub-f25c05?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="https://schoolmonitor.vercel.app"><img src="https://img.shields.io/badge/School_Monitor-12805c?style=for-the-badge&logo=vercel&logoColor=white" alt="School Monitor"></a>
-  <a href="https://abhxym.github.io/system-design-atlas/"><img src="https://img.shields.io/badge/System_Design_Atlas-3b6cf6?style=for-the-badge&logo=githubpages&logoColor=white" alt="System Design Atlas"></a>
-  <a href="https://siddhi-hygiene.vercel.app"><img src="https://img.shields.io/badge/Siddhi_Hygiene-f2679a?style=for-the-badge&logo=react&logoColor=white" alt="Siddhi Hygiene"></a>
-  <a href="https://abhxym.github.io/project-management/"><img src="https://img.shields.io/badge/ShopEase_PM-f7c600?style=for-the-badge&logo=githubpages&logoColor=1c1f24" alt="ShopEase Project Management"></a>
+  <a href="https://schoolmonitor.vercel.app"><img src="https://img.shields.io/badge/School_Monitor-f25c05?style=for-the-badge&logo=vercel&logoColor=white" alt="School Monitor"></a>
+  <a href="https://abhxym.github.io/system-design-atlas/"><img src="https://img.shields.io/badge/System_Design_Atlas-f25c05?style=for-the-badge&logo=githubpages&logoColor=white" alt="System Design Atlas"></a>
+  <a href="https://siddhi-hygiene.vercel.app"><img src="https://img.shields.io/badge/Siddhi_Hygiene-f25c05?style=for-the-badge&logo=react&logoColor=white" alt="Siddhi Hygiene"></a>
+  <a href="https://abhxym.github.io/project-management/"><img src="https://img.shields.io/badge/ShopEase_PM-f25c05?style=for-the-badge&logo=githubpages&logoColor=white" alt="ShopEase Project Management"></a>
   <!-- Add your profiles here, e.g.:
-  <a href="https://www.linkedin.com/in/your-handle/"><img src="https://img.shields.io/badge/LinkedIn-3b6cf6?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="https://www.linkedin.com/in/your-handle/"><img src="https://img.shields.io/badge/LinkedIn-f25c05?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-f25c05?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   -->
 </p>
@@ -47,7 +47,7 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/redrob-ai">RedRob AI</a></h3>
-      <img src="https://img.shields.io/badge/SEARCH_·_RANKING-f25c05?style=flat-square" alt="SEARCH · RANKING">
+      <img src="https://img.shields.io/badge/SEARCH_·_RANKING-12805c?style=flat-square" alt="SEARCH · RANKING">
       <p>Explainable candidate ranking over 100k profiles: BM25 + FAISS fused with RRF, JD-aware signals and a cross-encoder rerank. No LLM, CPU only.</p>
       <p><sub>BM25 · FAISS · Cross-encoder · FastAPI · React</sub></p>
       <p><sub><a href="https://github.com/Abhxym/redrob-ai">View on GitHub</a></sub></p>
@@ -56,14 +56,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/InsightFlow">InsightFlow</a></h3>
-      <img src="https://img.shields.io/badge/NLP_·_RAG_ANALYTICS-3b6cf6?style=flat-square" alt="NLP · RAG ANALYTICS">
+      <img src="https://img.shields.io/badge/NLP_·_RAG_ANALYTICS-12805c?style=flat-square" alt="NLP · RAG ANALYTICS">
       <p>Survey analytics where non-technical users ask questions in plain English: themes and sentiment, plus a RAG agent that answers with citations.</p>
       <p><sub>Gemini · Pinecone · FastAPI · React · Node.js · MySQL</sub></p>
       <p><sub><a href="https://github.com/Abhxym/InsightFlow">View on GitHub</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/Glaucoma-AI">Glaucoma AI</a></h3>
-      <img src="https://img.shields.io/badge/MEDICAL_IMAGING-f2679a?style=flat-square" alt="MEDICAL IMAGING">
+      <img src="https://img.shields.io/badge/MEDICAL_IMAGING-12805c?style=flat-square" alt="MEDICAL IMAGING">
       <p>Multi-stage clinical decision support that screens retinal fundus images for glaucoma (YOLOv8 → UNet++ / transformer → XGBoost), with a dashboard for doctors.</p>
       <p><sub>PyTorch · YOLOv8 · UNet++ · XGBoost · Next.js</sub></p>
       <p><sub><a href="https://github.com/Abhxym/Glaucoma-AI">View on GitHub</a></sub></p>
@@ -72,7 +72,7 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://siddhi-hygiene.vercel.app">Siddhi Hygiene</a></h3>
-      <img src="https://img.shields.io/badge/WEB_·_BUSINESS_SITE-f7c600?style=flat-square" alt="WEB · BUSINESS SITE">
+      <img src="https://img.shields.io/badge/WEB_·_BUSINESS_SITE-12805c?style=flat-square" alt="WEB · BUSINESS SITE">
       <p>Website for a Pune commercial deep-cleaning and sanitisation company: services, industries served, results, free-quote and inspection requests.</p>
       <p><sub>React · Vite · Vercel</sub></p>
       <p><sub><a href="https://siddhi-hygiene.vercel.app">Live site</a> · <a href="https://github.com/Abhxym/siddhi-hygiene">Code</a></sub></p>
@@ -88,14 +88,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://abhxym.github.io/system-design-atlas/">System Design Atlas</a></h3>
-      <img src="https://img.shields.io/badge/INTERACTIVE_REFERENCE-f25c05?style=flat-square" alt="INTERACTIVE REFERENCE">
+      <img src="https://img.shields.io/badge/INTERACTIVE_REFERENCE-12805c?style=flat-square" alt="INTERACTIVE REFERENCE">
       <p>Animated, interactive reference for 111 system design concepts across 16 domains, with trade-offs, real examples and interview prep.</p>
       <p><sub>HTML · Canvas · JavaScript</sub></p>
       <p><sub><a href="https://abhxym.github.io/system-design-atlas/">Live site</a> · <a href="https://github.com/Abhxym/system-design-atlas">Code</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/ClipMind-AI">ClipMind AI</a></h3>
-      <img src="https://img.shields.io/badge/GENERATIVE_AI_·_AGENTS-3b6cf6?style=flat-square" alt="GENERATIVE AI · AGENTS">
+      <img src="https://img.shields.io/badge/GENERATIVE_AI_·_AGENTS-12805c?style=flat-square" alt="GENERATIVE AI · AGENTS">
       <p>13-agent LangGraph pipeline that turns raw video clips and a one-line brief into a captioned, platform-ready reel, with brand-guide RAG and a review loop.</p>
       <p><sub>LangGraph · Gemini · Whisper · FAISS · FFmpeg · React</sub></p>
       <p><sub><a href="https://github.com/Abhxym/ClipMind-AI">View on GitHub</a></sub></p>
@@ -111,14 +111,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/ecommerce-microservices-docker">ShopEase</a></h3>
-      <img src="https://img.shields.io/badge/MICROSERVICES_·_DOCKER-f25c05?style=flat-square" alt="MICROSERVICES · DOCKER">
+      <img src="https://img.shields.io/badge/MICROSERVICES_·_DOCKER-12805c?style=flat-square" alt="MICROSERVICES · DOCKER">
       <p>Online marketplace split into three microservices in three languages (Java, Node.js, Python), with a React storefront, a seller panel and one MySQL database. Health checks, startup ordering and a MySQL upgrade without data loss, all from one <code>docker compose up</code>.</p>
       <p><sub>Spring Boot · Express · Flask · MySQL · React · nginx · Docker Compose</sub></p>
       <p><sub><a href="https://github.com/Abhxym/ecommerce-microservices-docker">View on GitHub</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/kubepulse">KubePulse</a></h3>
-      <img src="https://img.shields.io/badge/KUBERNETES-3b6cf6?style=flat-square" alt="KUBERNETES">
+      <img src="https://img.shields.io/badge/KUBERNETES-12805c?style=flat-square" alt="KUBERNETES">
       <p>Node.js dashboard on Minikube that shows which pod served each request, with built-in load-balancing and self-healing tests, health probes, an HPA and a Prometheus <code>/metrics</code> endpoint.</p>
       <p><sub>Node.js · Docker · Kubernetes · Minikube · HPA · Prometheus</sub></p>
       <p><sub><a href="https://github.com/Abhxym/kubepulse">View on GitHub</a></sub></p>
@@ -134,7 +134,7 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/devops-ansible-case-study">Ansible Automation</a></h3>
-      <img src="https://img.shields.io/badge/CONFIG_MANAGEMENT-f2679a?style=flat-square" alt="CONFIG MANAGEMENT">
+      <img src="https://img.shields.io/badge/CONFIG_MANAGEMENT-12805c?style=flat-square" alt="CONFIG MANAGEMENT">
       <p>Ansible roles that set up two web servers and an Nginx load balancer for the ShopEase site, with rolling updates one server at a time, config-tested reloads and a verify playbook.</p>
       <p><sub>Ansible · Nginx · Docker · GitHub Actions</sub></p>
       <p><sub><a href="https://github.com/Abhxym/devops-ansible-case-study">View on GitHub</a></sub></p>
@@ -196,11 +196,11 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
 <p align="center"><img src="assets/section-stack.svg" alt="Technologies" width="100%"></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-f25c05?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/TypeScript-f25c05?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/JavaScript-f25c05?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
-  <img src="https://img.shields.io/badge/C++-f25c05?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
-  <img src="https://img.shields.io/badge/SQL-f25c05?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/Python-12805c?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-12805c?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/JavaScript-12805c?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
+  <img src="https://img.shields.io/badge/C++-12805c?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/SQL-12805c?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
   <br>
   <img src="https://img.shields.io/badge/LangGraph-12805c?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph">
   <img src="https://img.shields.io/badge/Gemini-12805c?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini">
@@ -209,45 +209,45 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <img src="https://img.shields.io/badge/Pinecone-12805c?style=for-the-badge&logo=pinecone&logoColor=white" alt="Pinecone">
   <img src="https://img.shields.io/badge/Whisper-12805c?style=for-the-badge&logo=openai&logoColor=white" alt="Whisper">
   <br>
-  <img src="https://img.shields.io/badge/PyTorch-f2679a?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/TensorFlow-f2679a?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
-  <img src="https://img.shields.io/badge/scikit--learn-f2679a?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn">
-  <img src="https://img.shields.io/badge/XGBoost-f2679a?style=for-the-badge&logoColor=white" alt="XGBoost">
-  <img src="https://img.shields.io/badge/YOLOv8-f2679a?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
-  <img src="https://img.shields.io/badge/OpenCV-f2679a?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
+  <img src="https://img.shields.io/badge/PyTorch-12805c?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/TensorFlow-12805c?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/scikit--learn-12805c?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/XGBoost-12805c?style=for-the-badge&logoColor=white" alt="XGBoost">
+  <img src="https://img.shields.io/badge/YOLOv8-12805c?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
+  <img src="https://img.shields.io/badge/OpenCV-12805c?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
   <br>
-  <img src="https://img.shields.io/badge/Apache_Spark-3b6cf6?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark">
-  <img src="https://img.shields.io/badge/Hadoop-3b6cf6?style=for-the-badge&logo=apachehadoop&logoColor=white" alt="Hadoop">
-  <img src="https://img.shields.io/badge/Kafka-3b6cf6?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka">
-  <img src="https://img.shields.io/badge/Neo4j-3b6cf6?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j">
-  <img src="https://img.shields.io/badge/pandas-3b6cf6?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
-  <img src="https://img.shields.io/badge/D3.js-3b6cf6?style=for-the-badge&logo=d3dotjs&logoColor=white" alt="D3.js">
+  <img src="https://img.shields.io/badge/Apache_Spark-12805c?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark">
+  <img src="https://img.shields.io/badge/Hadoop-12805c?style=for-the-badge&logo=apachehadoop&logoColor=white" alt="Hadoop">
+  <img src="https://img.shields.io/badge/Kafka-12805c?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka">
+  <img src="https://img.shields.io/badge/Neo4j-12805c?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j">
+  <img src="https://img.shields.io/badge/pandas-12805c?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
+  <img src="https://img.shields.io/badge/D3.js-12805c?style=for-the-badge&logo=d3dotjs&logoColor=white" alt="D3.js">
   <br>
-  <img src="https://img.shields.io/badge/FastAPI-f7c600?style=for-the-badge&logo=fastapi&logoColor=1c1f24" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Node.js-f7c600?style=for-the-badge&logo=nodedotjs&logoColor=1c1f24" alt="Node.js">
-  <img src="https://img.shields.io/badge/Express-f7c600?style=for-the-badge&logo=express&logoColor=1c1f24" alt="Express">
-  <img src="https://img.shields.io/badge/React-f7c600?style=for-the-badge&logo=react&logoColor=1c1f24" alt="React">
-  <img src="https://img.shields.io/badge/Next.js-f7c600?style=for-the-badge&logo=nextdotjs&logoColor=1c1f24" alt="Next.js">
-  <img src="https://img.shields.io/badge/Tailwind-f7c600?style=for-the-badge&logo=tailwindcss&logoColor=1c1f24" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/FastAPI-12805c?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Node.js-12805c?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express-12805c?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/React-12805c?style=for-the-badge&logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/Next.js-12805c?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/Tailwind-12805c?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
   <br>
-  <img src="https://img.shields.io/badge/PostgreSQL-0c6447?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/MySQL-0c6447?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/MongoDB-0c6447?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
-  <img src="https://img.shields.io/badge/Docker-0c6447?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Git-0c6447?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-  <img src="https://img.shields.io/badge/Vercel-0c6447?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/PostgreSQL-12805c?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/MySQL-12805c?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/MongoDB-12805c?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Docker-12805c?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Git-12805c?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/Vercel-12805c?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
   <br>
-  <img src="https://img.shields.io/badge/Java-3b6cf6?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/Spring_Boot-3b6cf6?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
-  <img src="https://img.shields.io/badge/Flask-3b6cf6?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/Nginx-3b6cf6?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx">
-  <img src="https://img.shields.io/badge/Kubernetes-3b6cf6?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Java-12805c?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Spring_Boot-12805c?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/Flask-12805c?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/Nginx-12805c?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx">
+  <img src="https://img.shields.io/badge/Kubernetes-12805c?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
   <br>
-  <img src="https://img.shields.io/badge/Jenkins-f2679a?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
-  <img src="https://img.shields.io/badge/Terraform-f2679a?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
-  <img src="https://img.shields.io/badge/Ansible-f2679a?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible">
-  <img src="https://img.shields.io/badge/GitHub_Actions-f2679a?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/Prometheus-f2679a?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus">
+  <img src="https://img.shields.io/badge/Jenkins-12805c?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
+  <img src="https://img.shields.io/badge/Terraform-12805c?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+  <img src="https://img.shields.io/badge/Ansible-12805c?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible">
+  <img src="https://img.shields.io/badge/GitHub_Actions-12805c?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Prometheus-12805c?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus">
 </p>
 
 <br>
