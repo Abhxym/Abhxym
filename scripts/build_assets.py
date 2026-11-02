@@ -1,6 +1,6 @@
 """
 Builds the SVG artwork used by the profile README: the black & white landscape banner,
-plus section titles, astronaut and footer in ShopEase green with an orange accent.
+plus section titles, astronaut and footer in ShopEase green with orange and yellow accents.
 
     python scripts/build_assets.py
 
@@ -23,6 +23,7 @@ HANDLE = "Abhxym"
 # ShopEase storefront colours (web-ui/src/styles.css)
 ORANGE, ORANGE_DARK = "#ff8a3d", "#f25c05"
 GREEN, GREEN_DARK, GREEN_UP = "#12805c", "#0c6447", "#22a06b"
+YELLOW = "#f7c600"
 INK = "#1c1f24"
 
 # slug, title, pill colour, text colour, icon path (16x16 viewBox)
@@ -94,7 +95,7 @@ def astronaut_svg() -> str:
   <rect width="{w}" height="{h}" rx="18" fill="url(#space)"/>
   {stars}
   <circle cx="262" cy="262" r="34" fill="url(#planet)"/>
-  <ellipse cx="262" cy="262" rx="56" ry="12" fill="none" stroke="#ffffffaa" stroke-width="2" transform="rotate(-18 262 262)"/>
+  <ellipse cx="262" cy="262" rx="56" ry="12" fill="none" stroke="{YELLOW}" stroke-width="2.5" transform="rotate(-18 262 262)"/>
   <g>
     <animateTransform attributeName="transform" type="translate" values="0 0; 8 -12; 0 0" dur="6s" repeatCount="indefinite"/>
     <g transform="translate(150 150) rotate(-20)">

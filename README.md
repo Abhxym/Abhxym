@@ -40,14 +40,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/supplychain-x">SUPPLYCHAIN-X</a></h3>
-      <img src="https://img.shields.io/badge/BIG_DATA_·_GRAPHS-12805c?style=flat-square" alt="BIG DATA · GRAPHS">
+      <img src="https://img.shields.io/badge/BIG_DATA_·_GRAPHS-f7c600?style=flat-square" alt="BIG DATA · GRAPHS">
       <p>Distributed platform that traces how a disaster cascades through global supply chains, hop by hop. 48,827 disaster events, 330k trade rows and a live Kafka feed.</p>
       <p><sub>HDFS · Spark · Kafka · Neo4j · FastAPI · D3</sub></p>
       <p><sub><a href="https://github.com/Abhxym/supplychain-x">View on GitHub</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/redrob-ai">RedRob AI</a></h3>
-      <img src="https://img.shields.io/badge/SEARCH_·_RANKING-12805c?style=flat-square" alt="SEARCH · RANKING">
+      <img src="https://img.shields.io/badge/SEARCH_·_RANKING-f7c600?style=flat-square" alt="SEARCH · RANKING">
       <p>Explainable candidate ranking over 100k profiles: BM25 + FAISS fused with RRF, JD-aware signals and a cross-encoder rerank. No LLM, CPU only.</p>
       <p><sub>BM25 · FAISS · Cross-encoder · FastAPI · React</sub></p>
       <p><sub><a href="https://github.com/Abhxym/redrob-ai">View on GitHub</a></sub></p>
@@ -56,14 +56,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/InsightFlow">InsightFlow</a></h3>
-      <img src="https://img.shields.io/badge/NLP_·_RAG_ANALYTICS-12805c?style=flat-square" alt="NLP · RAG ANALYTICS">
+      <img src="https://img.shields.io/badge/NLP_·_RAG_ANALYTICS-f7c600?style=flat-square" alt="NLP · RAG ANALYTICS">
       <p>Survey analytics where non-technical users ask questions in plain English: themes and sentiment, plus a RAG agent that answers with citations.</p>
       <p><sub>Gemini · Pinecone · FastAPI · React · Node.js · MySQL</sub></p>
       <p><sub><a href="https://github.com/Abhxym/InsightFlow">View on GitHub</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/Glaucoma-AI">Glaucoma AI</a></h3>
-      <img src="https://img.shields.io/badge/MEDICAL_IMAGING-12805c?style=flat-square" alt="MEDICAL IMAGING">
+      <img src="https://img.shields.io/badge/MEDICAL_IMAGING-f7c600?style=flat-square" alt="MEDICAL IMAGING">
       <p>Multi-stage clinical decision support that screens retinal fundus images for glaucoma (YOLOv8 → UNet++ / transformer → XGBoost), with a dashboard for doctors.</p>
       <p><sub>PyTorch · YOLOv8 · UNet++ · XGBoost · Next.js</sub></p>
       <p><sub><a href="https://github.com/Abhxym/Glaucoma-AI">View on GitHub</a></sub></p>
@@ -72,14 +72,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://siddhi-hygiene.vercel.app">Siddhi Hygiene</a></h3>
-      <img src="https://img.shields.io/badge/WEB_·_BUSINESS_SITE-12805c?style=flat-square" alt="WEB · BUSINESS SITE">
+      <img src="https://img.shields.io/badge/WEB_·_BUSINESS_SITE-f7c600?style=flat-square" alt="WEB · BUSINESS SITE">
       <p>Website for a Pune commercial deep-cleaning and sanitisation company: services, industries served, results, free-quote and inspection requests.</p>
       <p><sub>React · Vite · Vercel</sub></p>
       <p><sub><a href="https://siddhi-hygiene.vercel.app">Live site</a> · <a href="https://github.com/Abhxym/siddhi-hygiene">Code</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://schoolmonitor.vercel.app">School Monitor</a></h3>
-      <img src="https://img.shields.io/badge/FULL--STACK_·_GOV--TECH-12805c?style=flat-square" alt="FULL-STACK · GOV-TECH">
+      <img src="https://img.shields.io/badge/FULL--STACK_·_GOV--TECH-f7c600?style=flat-square" alt="FULL-STACK · GOV-TECH">
       <p>Monitoring system for 12 Zilla Parishad schools: attendance, events, reports, GR publishing and a public transparency page, with role-based access.</p>
       <p><sub>Next.js · Express · MongoDB · JWT · Google OAuth</sub></p>
       <p><sub><a href="https://schoolmonitor.vercel.app">Live site</a> · <a href="https://github.com/Abhxym/schoolmonitor">Code</a></sub></p>
@@ -88,14 +88,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://abhxym.github.io/system-design-atlas/">System Design Atlas</a></h3>
-      <img src="https://img.shields.io/badge/INTERACTIVE_REFERENCE-12805c?style=flat-square" alt="INTERACTIVE REFERENCE">
+      <img src="https://img.shields.io/badge/INTERACTIVE_REFERENCE-f7c600?style=flat-square" alt="INTERACTIVE REFERENCE">
       <p>Animated, interactive reference for 111 system design concepts across 16 domains, with trade-offs, real examples and interview prep.</p>
       <p><sub>HTML · Canvas · JavaScript</sub></p>
       <p><sub><a href="https://abhxym.github.io/system-design-atlas/">Live site</a> · <a href="https://github.com/Abhxym/system-design-atlas">Code</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/ClipMind-AI">ClipMind AI</a></h3>
-      <img src="https://img.shields.io/badge/GENERATIVE_AI_·_AGENTS-12805c?style=flat-square" alt="GENERATIVE AI · AGENTS">
+      <img src="https://img.shields.io/badge/GENERATIVE_AI_·_AGENTS-f7c600?style=flat-square" alt="GENERATIVE AI · AGENTS">
       <p>13-agent LangGraph pipeline that turns raw video clips and a one-line brief into a captioned, platform-ready reel, with brand-guide RAG and a review loop.</p>
       <p><sub>LangGraph · Gemini · Whisper · FAISS · FFmpeg · React</sub></p>
       <p><sub><a href="https://github.com/Abhxym/ClipMind-AI">View on GitHub</a></sub></p>
@@ -111,14 +111,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/ecommerce-microservices-docker">ShopEase</a></h3>
-      <img src="https://img.shields.io/badge/MICROSERVICES_·_DOCKER-12805c?style=flat-square" alt="MICROSERVICES · DOCKER">
+      <img src="https://img.shields.io/badge/MICROSERVICES_·_DOCKER-f7c600?style=flat-square" alt="MICROSERVICES · DOCKER">
       <p>Online marketplace split into three microservices in three languages (Java, Node.js, Python), with a React storefront, a seller panel and one MySQL database. Health checks, startup ordering and a MySQL upgrade without data loss, all from one <code>docker compose up</code>.</p>
       <p><sub>Spring Boot · Express · Flask · MySQL · React · nginx · Docker Compose</sub></p>
       <p><sub><a href="https://github.com/Abhxym/ecommerce-microservices-docker">View on GitHub</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/kubepulse">KubePulse</a></h3>
-      <img src="https://img.shields.io/badge/KUBERNETES-12805c?style=flat-square" alt="KUBERNETES">
+      <img src="https://img.shields.io/badge/KUBERNETES-f7c600?style=flat-square" alt="KUBERNETES">
       <p>Node.js dashboard on Minikube that shows which pod served each request, with built-in load-balancing and self-healing tests, health probes, an HPA and a Prometheus <code>/metrics</code> endpoint.</p>
       <p><sub>Node.js · Docker · Kubernetes · Minikube · HPA · Prometheus</sub></p>
       <p><sub><a href="https://github.com/Abhxym/kubepulse">View on GitHub</a></sub></p>
@@ -127,14 +127,14 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/taskflow-cicd">TaskFlow CI/CD</a></h3>
-      <img src="https://img.shields.io/badge/CI%2FCD_·_IaC-12805c?style=flat-square" alt="CI/CD · IaC">
+      <img src="https://img.shields.io/badge/CI%2FCD_·_IaC-f7c600?style=flat-square" alt="CI/CD · IaC">
       <p>Task board shipped by a Jenkins pipeline: tests, image build, Terraform validate, deploy to staging, smoke test, manual approval, then production. Jenkins itself is configured as code.</p>
       <p><sub>Jenkins · Terraform · Docker · Nginx · Node.js</sub></p>
       <p><sub><a href="https://github.com/Abhxym/taskflow-cicd">View on GitHub</a></sub></p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/Abhxym/devops-ansible-case-study">Ansible Automation</a></h3>
-      <img src="https://img.shields.io/badge/CONFIG_MANAGEMENT-12805c?style=flat-square" alt="CONFIG MANAGEMENT">
+      <img src="https://img.shields.io/badge/CONFIG_MANAGEMENT-f7c600?style=flat-square" alt="CONFIG MANAGEMENT">
       <p>Ansible roles that set up two web servers and an Nginx load balancer for the ShopEase site, with rolling updates one server at a time, config-tested reloads and a verify playbook.</p>
       <p><sub>Ansible · Nginx · Docker · GitHub Actions</sub></p>
       <p><sub><a href="https://github.com/Abhxym/devops-ansible-case-study">View on GitHub</a></sub></p>
