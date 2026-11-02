@@ -40,12 +40,12 @@ def _b64(path: Path) -> str:
 
 # slug, title, pill colour, text colour, icon path (16x16 viewBox)
 SECTIONS = [
-    ("about", "About me", INK, "#fff", "M8 8a3.5 3.5 0 100-7 3.5 3.5 0 000 7zm0 1.5c-3.3 0-6 1.8-6 4v1.5h12V13.5c0-2.2-2.7-4-6-4z"),
-    ("projects", "Featured projects", INK, "#fff", "M1.5 3A1.5 1.5 0 013 1.5h3.6l1.5 1.8H13A1.5 1.5 0 0114.5 4.8v7.7A1.5 1.5 0 0113 14H3a1.5 1.5 0 01-1.5-1.5z"),
-    ("cloud", "Cloud & DevOps", INK, "#fff", "M4.5 13.5a3.5 3.5 0 01-.6-6.95A4.5 4.5 0 0112.6 6a3.75 3.75 0 01-.35 7.5z"),
-    ("spotlight", "In action", INK, "#fff", "M1 4.5A1.5 1.5 0 012.5 3h7A1.5 1.5 0 0111 4.5v1.3l4-2.3v9l-4-2.3v1.3A1.5 1.5 0 019.5 13h-7A1.5 1.5 0 011 11.5z"),
-    ("stack", "Technologies", INK, "#fff", "M5.7 3.3L1 8l4.7 4.7 1.1-1.1L3.2 8l3.6-3.6zm4.6 0L9.2 4.4 12.8 8l-3.6 3.6 1.1 1.1L15 8z"),
-    ("more", "More projects", INK, "#fff", "M2 2.5h5v5H2zm7 0h5v5H9zM2 9.5h5v5H2zm7 0h5v5H9z"),
+    ("about", "About me", RED, "#fff", "M8 8a3.5 3.5 0 100-7 3.5 3.5 0 000 7zm0 1.5c-3.3 0-6 1.8-6 4v1.5h12V13.5c0-2.2-2.7-4-6-4z"),
+    ("projects", "Featured projects", RED, "#fff", "M1.5 3A1.5 1.5 0 013 1.5h3.6l1.5 1.8H13A1.5 1.5 0 0114.5 4.8v7.7A1.5 1.5 0 0113 14H3a1.5 1.5 0 01-1.5-1.5z"),
+    ("cloud", "Cloud & DevOps", RED, "#fff", "M4.5 13.5a3.5 3.5 0 01-.6-6.95A4.5 4.5 0 0112.6 6a3.75 3.75 0 01-.35 7.5z"),
+    ("spotlight", "In action", RED, "#fff", "M1 4.5A1.5 1.5 0 012.5 3h7A1.5 1.5 0 0111 4.5v1.3l4-2.3v9l-4-2.3v1.3A1.5 1.5 0 019.5 13h-7A1.5 1.5 0 011 11.5z"),
+    ("stack", "Technologies", RED, "#fff", "M5.7 3.3L1 8l4.7 4.7 1.1-1.1L3.2 8l3.6-3.6zm4.6 0L9.2 4.4 12.8 8l-3.6 3.6 1.1 1.1L15 8z"),
+    ("more", "More projects", RED, "#fff", "M2 2.5h5v5H2zm7 0h5v5H9zM2 9.5h5v5H2zm7 0h5v5H9z"),
 ]
 
 
