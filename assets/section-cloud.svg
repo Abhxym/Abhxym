@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="Cloud &amp; DevOps">
+  <line x1="40" y1="28" x2="320" y2="28" stroke="#3b6cf6" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <line x1="580" y1="28" x2="860" y2="28" stroke="#3b6cf6" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <rect x="336.5" y="8" width="227.0" height="40" rx="12" fill="#3b6cf6"/>
+  <g transform="translate(354.5 18) scale(1.25)"><path d="M4.5 13.5a3.5 3.5 0 01-.6-6.95A4.5 4.5 0 0112.6 6a3.75 3.75 0 01-.35 7.5z" fill="#fff"/></g>
+  <text x="384.5" y="34" style="font:800 19px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#fff">Cloud &amp; DevOps</text>
+</svg>
