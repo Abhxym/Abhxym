@@ -25,14 +25,13 @@ RED, RED_DARK = "#e60023", "#ad081b"
 YELLOW = "#f7c600"
 INK = "#111111"
 
-# collage tile (assets/collage/<name>.jpg), x, y, width, height; later tiles sit on top
+# whole-app screenshot (assets/collage/<name>.jpg), x, y, width, height; later tiles sit on top
 TILES = [
-    ("clipmind", 640, 236, 210, 250),
-    ("siddhi", 660, -34, 210, 150),
-    ("redrob", 1010, -30, 150, 90),
-    ("insightflow", 1062, 116, 130, 160),
-    ("shopease", 798, 74, 250, 330),
-    ("supplychain", 1010, 300, 170, 150),
+    ("clipmind", 628, 40, 220, 138),
+    ("redrob", 990, 30, 180, 115),
+    ("insightflow", 618, 252, 220, 138),
+    ("siddhi", 1000, 278, 180, 112),
+    ("shopease", 760, 100, 300, 234),
 ]
 
 
@@ -51,38 +50,29 @@ SECTIONS = [
 
 
 def banner_svg() -> str:
-    """Pinterest-style hero: bold welcome on the left, a floating collage of project screenshots on the right."""
+    """Pinterest-style hero: the welcome line on the left, a collage of whole app screenshots on the right."""
     w, h = 1200, 420
     title = f"Welcome to {HANDLE}'s GitHub"
     tiles = "".join(
-        f'''<g><animateTransform attributeName="transform" type="translate" values="0 0;0 {-5 if i % 2 else 5};0 0" dur="{6 + i}s" repeatCount="indefinite"/>
-      <clipPath id="t{i}"><rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="22"/></clipPath>
-      <image href="data:image/jpeg;base64,{_b64(COLLAGE / f"{name}.jpg")}" x="{x}" y="{y}" width="{tw}" height="{th}" clip-path="url(#t{i})" preserveAspectRatio="xMidYMid slice"/>
+        f'''<g filter="url(#shadow)">
+      <clipPath id="t{i}"><rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="14"/></clipPath>
+      <image href="data:image/jpeg;base64,{_b64(COLLAGE / f"{name}.jpg")}" x="{x}" y="{y}" width="{tw}" height="{th}" clip-path="url(#t{i})"/>
+      <rect x="{x}" y="{y}" width="{tw}" height="{th}" rx="14" fill="none" stroke="#fff" stroke-width="4"/>
     </g>'''
         for i, (name, x, y, tw, th) in enumerate(TILES)
     )
-    nav = "".join(
-        f'<text x="{x}" y="47" style="font:600 17px {FONT};fill:{INK}">{label}</text>'
-        for x, label in [(196, "About"), (268, "Projects"), (356, "Cloud &amp; DevOps"), (502, "Stack")]
-    )
     return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(title)}">
-  <defs><clipPath id="clip"><rect width="{w}" height="{h}" rx="18"/></clipPath></defs>
+  <defs>
+    <clipPath id="clip"><rect width="{w}" height="{h}" rx="18"/></clipPath>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#000" flood-opacity=".18"/></filter>
+  </defs>
   <g clip-path="url(#clip)">
     <rect width="{w}" height="{h}" fill="#fff"/>
     {tiles}
   </g>
   <rect x=".5" y=".5" width="{w - 1}" height="{h - 1}" rx="18" fill="none" stroke="#00000014"/>
-  <circle cx="50" cy="41" r="15" fill="{RED}"/>
-  <text x="50" y="47.5" text-anchor="middle" style="font:800 18px {FONT};fill:#fff">A</text>
-  <text x="72" y="49" style="font:800 25px {FONT};fill:{RED};letter-spacing:-1px">{HANDLE}</text>
-  {nav}
-  <text x="70" y="186" style="font:800 58px {FONT};fill:{INK};letter-spacing:-2.5px">Welcome to</text>
-  <text x="70" y="254" style="font:800 58px {FONT};fill:{INK};letter-spacing:-2.5px"><tspan fill="{RED}">{HANDLE}'s</tspan> GitHub</text>
-  <text x="72" y="294" style="font:500 18px {FONT};fill:#5f5f5f">AI/ML engineer · full-stack builds · cloud &amp; DevOps</text>
-  <rect x="70" y="322" width="206" height="50" rx="16" fill="{RED}"/>
-  <text x="173" y="353" text-anchor="middle" style="font:700 17px {FONT};fill:#fff">Explore my projects</text>
-  <rect x="288" y="322" width="176" height="50" rx="16" fill="#e9e9e4"/>
-  <text x="376" y="353" text-anchor="middle" style="font:700 17px {FONT};fill:{INK}">See my stack</text>
+  <text x="70" y="196" style="font:800 58px {FONT};fill:{INK};letter-spacing:-2.5px">Welcome to</text>
+  <text x="70" y="272" style="font:800 58px {FONT};fill:{INK};letter-spacing:-2.5px"><tspan fill="{RED}">{HANDLE}'s</tspan> GitHub</text>
 </svg>
 '''
 
