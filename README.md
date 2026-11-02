@@ -7,7 +7,6 @@
   <a href="https://schoolmonitor.vercel.app"><img src="https://img.shields.io/badge/School_Monitor-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="School Monitor"></a>
   <a href="https://abhxym.github.io/system-design-atlas/"><img src="https://img.shields.io/badge/System_Design_Atlas-111111?style=for-the-badge&logo=githubpages&logoColor=white" alt="System Design Atlas"></a>
   <a href="https://siddhi-hygiene.vercel.app"><img src="https://img.shields.io/badge/Siddhi_Hygiene-111111?style=for-the-badge&logo=react&logoColor=white" alt="Siddhi Hygiene"></a>
-  <a href="https://abhxym.github.io/project-management/"><img src="https://img.shields.io/badge/ShopEase_PM-111111?style=for-the-badge&logo=githubpages&logoColor=white" alt="ShopEase Project Management"></a>
   <!-- Add your profiles here, e.g.:
   <a href="https://www.linkedin.com/in/your-handle/"><img src="https://img.shields.io/badge/LinkedIn-111111?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-111111?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
