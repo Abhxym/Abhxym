@@ -3,14 +3,14 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Abhxym?tab=repositories"><img src="https://img.shields.io/badge/GitHub-f25c05?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
-  <a href="https://schoolmonitor.vercel.app"><img src="https://img.shields.io/badge/School_Monitor-f25c05?style=for-the-badge&logo=vercel&logoColor=white" alt="School Monitor"></a>
-  <a href="https://abhxym.github.io/system-design-atlas/"><img src="https://img.shields.io/badge/System_Design_Atlas-f25c05?style=for-the-badge&logo=githubpages&logoColor=white" alt="System Design Atlas"></a>
-  <a href="https://siddhi-hygiene.vercel.app"><img src="https://img.shields.io/badge/Siddhi_Hygiene-f25c05?style=for-the-badge&logo=react&logoColor=white" alt="Siddhi Hygiene"></a>
-  <a href="https://abhxym.github.io/project-management/"><img src="https://img.shields.io/badge/ShopEase_PM-f25c05?style=for-the-badge&logo=githubpages&logoColor=white" alt="ShopEase Project Management"></a>
+  <a href="https://github.com/Abhxym?tab=repositories"><img src="https://img.shields.io/badge/GitHub-e60023?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <a href="https://schoolmonitor.vercel.app"><img src="https://img.shields.io/badge/School_Monitor-e60023?style=for-the-badge&logo=vercel&logoColor=white" alt="School Monitor"></a>
+  <a href="https://abhxym.github.io/system-design-atlas/"><img src="https://img.shields.io/badge/System_Design_Atlas-e60023?style=for-the-badge&logo=githubpages&logoColor=white" alt="System Design Atlas"></a>
+  <a href="https://siddhi-hygiene.vercel.app"><img src="https://img.shields.io/badge/Siddhi_Hygiene-e60023?style=for-the-badge&logo=react&logoColor=white" alt="Siddhi Hygiene"></a>
+  <a href="https://abhxym.github.io/project-management/"><img src="https://img.shields.io/badge/ShopEase_PM-e60023?style=for-the-badge&logo=githubpages&logoColor=white" alt="ShopEase Project Management"></a>
   <!-- Add your profiles here, e.g.:
-  <a href="https://www.linkedin.com/in/your-handle/"><img src="https://img.shields.io/badge/LinkedIn-f25c05?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
-  <a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-f25c05?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
+  <a href="https://www.linkedin.com/in/your-handle/"><img src="https://img.shields.io/badge/LinkedIn-e60023?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <a href="mailto:you@example.com"><img src="https://img.shields.io/badge/Email-e60023?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"></a>
   -->
 </p>
 
@@ -196,58 +196,58 @@ Hello there! I'm **Abhxym**, an AI/ML engineer who builds systems end to end, fr
 <p align="center"><img src="assets/section-stack.svg" alt="Technologies" width="100%"></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Python-12805c?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-  <img src="https://img.shields.io/badge/TypeScript-12805c?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
-  <img src="https://img.shields.io/badge/JavaScript-12805c?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
-  <img src="https://img.shields.io/badge/C++-12805c?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
-  <img src="https://img.shields.io/badge/SQL-12805c?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
+  <img src="https://img.shields.io/badge/Python-111111?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/TypeScript-111111?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+  <img src="https://img.shields.io/badge/JavaScript-111111?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript">
+  <img src="https://img.shields.io/badge/C++-111111?style=for-the-badge&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/SQL-111111?style=for-the-badge&logo=mysql&logoColor=white" alt="SQL">
   <br>
-  <img src="https://img.shields.io/badge/LangGraph-12805c?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph">
-  <img src="https://img.shields.io/badge/Gemini-12805c?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini">
-  <img src="https://img.shields.io/badge/Hugging_Face-12805c?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face">
-  <img src="https://img.shields.io/badge/FAISS-12805c?style=for-the-badge&logo=meta&logoColor=white" alt="FAISS">
-  <img src="https://img.shields.io/badge/Pinecone-12805c?style=for-the-badge&logo=pinecone&logoColor=white" alt="Pinecone">
-  <img src="https://img.shields.io/badge/Whisper-12805c?style=for-the-badge&logo=openai&logoColor=white" alt="Whisper">
+  <img src="https://img.shields.io/badge/LangGraph-111111?style=for-the-badge&logo=langchain&logoColor=white" alt="LangGraph">
+  <img src="https://img.shields.io/badge/Gemini-111111?style=for-the-badge&logo=googlegemini&logoColor=white" alt="Gemini">
+  <img src="https://img.shields.io/badge/Hugging_Face-111111?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face">
+  <img src="https://img.shields.io/badge/FAISS-111111?style=for-the-badge&logo=meta&logoColor=white" alt="FAISS">
+  <img src="https://img.shields.io/badge/Pinecone-111111?style=for-the-badge&logo=pinecone&logoColor=white" alt="Pinecone">
+  <img src="https://img.shields.io/badge/Whisper-111111?style=for-the-badge&logo=openai&logoColor=white" alt="Whisper">
   <br>
-  <img src="https://img.shields.io/badge/PyTorch-12805c?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
-  <img src="https://img.shields.io/badge/TensorFlow-12805c?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
-  <img src="https://img.shields.io/badge/scikit--learn-12805c?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn">
-  <img src="https://img.shields.io/badge/XGBoost-12805c?style=for-the-badge&logoColor=white" alt="XGBoost">
-  <img src="https://img.shields.io/badge/YOLOv8-12805c?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
-  <img src="https://img.shields.io/badge/OpenCV-12805c?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
+  <img src="https://img.shields.io/badge/PyTorch-111111?style=for-the-badge&logo=pytorch&logoColor=white" alt="PyTorch">
+  <img src="https://img.shields.io/badge/TensorFlow-111111?style=for-the-badge&logo=tensorflow&logoColor=white" alt="TensorFlow">
+  <img src="https://img.shields.io/badge/scikit--learn-111111?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn">
+  <img src="https://img.shields.io/badge/XGBoost-111111?style=for-the-badge&logoColor=white" alt="XGBoost">
+  <img src="https://img.shields.io/badge/YOLOv8-111111?style=for-the-badge&logo=ultralytics&logoColor=white" alt="YOLOv8">
+  <img src="https://img.shields.io/badge/OpenCV-111111?style=for-the-badge&logo=opencv&logoColor=white" alt="OpenCV">
   <br>
-  <img src="https://img.shields.io/badge/Apache_Spark-12805c?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark">
-  <img src="https://img.shields.io/badge/Hadoop-12805c?style=for-the-badge&logo=apachehadoop&logoColor=white" alt="Hadoop">
-  <img src="https://img.shields.io/badge/Kafka-12805c?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka">
-  <img src="https://img.shields.io/badge/Neo4j-12805c?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j">
-  <img src="https://img.shields.io/badge/pandas-12805c?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
-  <img src="https://img.shields.io/badge/D3.js-12805c?style=for-the-badge&logo=d3dotjs&logoColor=white" alt="D3.js">
+  <img src="https://img.shields.io/badge/Apache_Spark-111111?style=for-the-badge&logo=apachespark&logoColor=white" alt="Apache Spark">
+  <img src="https://img.shields.io/badge/Hadoop-111111?style=for-the-badge&logo=apachehadoop&logoColor=white" alt="Hadoop">
+  <img src="https://img.shields.io/badge/Kafka-111111?style=for-the-badge&logo=apachekafka&logoColor=white" alt="Kafka">
+  <img src="https://img.shields.io/badge/Neo4j-111111?style=for-the-badge&logo=neo4j&logoColor=white" alt="Neo4j">
+  <img src="https://img.shields.io/badge/pandas-111111?style=for-the-badge&logo=pandas&logoColor=white" alt="pandas">
+  <img src="https://img.shields.io/badge/D3.js-111111?style=for-the-badge&logo=d3dotjs&logoColor=white" alt="D3.js">
   <br>
-  <img src="https://img.shields.io/badge/FastAPI-12805c?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
-  <img src="https://img.shields.io/badge/Node.js-12805c?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
-  <img src="https://img.shields.io/badge/Express-12805c?style=for-the-badge&logo=express&logoColor=white" alt="Express">
-  <img src="https://img.shields.io/badge/React-12805c?style=for-the-badge&logo=react&logoColor=white" alt="React">
-  <img src="https://img.shields.io/badge/Next.js-12805c?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
-  <img src="https://img.shields.io/badge/Tailwind-12805c?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
+  <img src="https://img.shields.io/badge/FastAPI-111111?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI">
+  <img src="https://img.shields.io/badge/Node.js-111111?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js">
+  <img src="https://img.shields.io/badge/Express-111111?style=for-the-badge&logo=express&logoColor=white" alt="Express">
+  <img src="https://img.shields.io/badge/React-111111?style=for-the-badge&logo=react&logoColor=white" alt="React">
+  <img src="https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js">
+  <img src="https://img.shields.io/badge/Tailwind-111111?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS">
   <br>
-  <img src="https://img.shields.io/badge/PostgreSQL-12805c?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
-  <img src="https://img.shields.io/badge/MySQL-12805c?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-  <img src="https://img.shields.io/badge/MongoDB-12805c?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
-  <img src="https://img.shields.io/badge/Docker-12805c?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
-  <img src="https://img.shields.io/badge/Git-12805c?style=for-the-badge&logo=git&logoColor=white" alt="Git">
-  <img src="https://img.shields.io/badge/Vercel-12805c?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
+  <img src="https://img.shields.io/badge/PostgreSQL-111111?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/MySQL-111111?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/MongoDB-111111?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB">
+  <img src="https://img.shields.io/badge/Docker-111111?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/Git-111111?style=for-the-badge&logo=git&logoColor=white" alt="Git">
+  <img src="https://img.shields.io/badge/Vercel-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel">
   <br>
-  <img src="https://img.shields.io/badge/Java-12805c?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
-  <img src="https://img.shields.io/badge/Spring_Boot-12805c?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
-  <img src="https://img.shields.io/badge/Flask-12805c?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
-  <img src="https://img.shields.io/badge/Nginx-12805c?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx">
-  <img src="https://img.shields.io/badge/Kubernetes-12805c?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
+  <img src="https://img.shields.io/badge/Java-111111?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
+  <img src="https://img.shields.io/badge/Spring_Boot-111111?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot">
+  <img src="https://img.shields.io/badge/Flask-111111?style=for-the-badge&logo=flask&logoColor=white" alt="Flask">
+  <img src="https://img.shields.io/badge/Nginx-111111?style=for-the-badge&logo=nginx&logoColor=white" alt="Nginx">
+  <img src="https://img.shields.io/badge/Kubernetes-111111?style=for-the-badge&logo=kubernetes&logoColor=white" alt="Kubernetes">
   <br>
-  <img src="https://img.shields.io/badge/Jenkins-12805c?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
-  <img src="https://img.shields.io/badge/Terraform-12805c?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
-  <img src="https://img.shields.io/badge/Ansible-12805c?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible">
-  <img src="https://img.shields.io/badge/GitHub_Actions-12805c?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
-  <img src="https://img.shields.io/badge/Prometheus-12805c?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus">
+  <img src="https://img.shields.io/badge/Jenkins-111111?style=for-the-badge&logo=jenkins&logoColor=white" alt="Jenkins">
+  <img src="https://img.shields.io/badge/Terraform-111111?style=for-the-badge&logo=terraform&logoColor=white" alt="Terraform">
+  <img src="https://img.shields.io/badge/Ansible-111111?style=for-the-badge&logo=ansible&logoColor=white" alt="Ansible">
+  <img src="https://img.shields.io/badge/GitHub_Actions-111111?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Prometheus-111111?style=for-the-badge&logo=prometheus&logoColor=white" alt="Prometheus">
 </p>
 
 <br>

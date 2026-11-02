@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="Technologies">
-  <line x1="40" y1="28" x2="332" y2="28" stroke="#12805c" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
-  <line x1="568" y1="28" x2="860" y2="28" stroke="#12805c" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
-  <rect x="348.0" y="8" width="204.0" height="40" rx="12" fill="#12805c"/>
+  <line x1="40" y1="28" x2="332" y2="28" stroke="#111111" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <line x1="568" y1="28" x2="860" y2="28" stroke="#111111" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <rect x="348.0" y="8" width="204.0" height="40" rx="12" fill="#111111"/>
   <g transform="translate(366.0 18) scale(1.25)"><path d="M5.7 3.3L1 8l4.7 4.7 1.1-1.1L3.2 8l3.6-3.6zm4.6 0L9.2 4.4 12.8 8l-3.6 3.6 1.1 1.1L15 8z" fill="#fff"/></g>
   <text x="396.0" y="34" style="font:800 19px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#fff">Technologies</text>
 </svg>

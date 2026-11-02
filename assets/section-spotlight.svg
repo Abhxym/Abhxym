@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="In action">
-  <line x1="40" y1="28" x2="349" y2="28" stroke="#12805c" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
-  <line x1="551" y1="28" x2="860" y2="28" stroke="#12805c" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
-  <rect x="365.2" y="8" width="169.5" height="40" rx="12" fill="#12805c"/>
+  <line x1="40" y1="28" x2="349" y2="28" stroke="#111111" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <line x1="551" y1="28" x2="860" y2="28" stroke="#111111" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <rect x="365.2" y="8" width="169.5" height="40" rx="12" fill="#111111"/>
   <g transform="translate(383.2 18) scale(1.25)"><path d="M1 4.5A1.5 1.5 0 012.5 3h7A1.5 1.5 0 0111 4.5v1.3l4-2.3v9l-4-2.3v1.3A1.5 1.5 0 019.5 13h-7A1.5 1.5 0 011 11.5z" fill="#fff"/></g>
   <text x="413.2" y="34" style="font:800 19px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#fff">In action</text>
 </svg>

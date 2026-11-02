@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="900" height="56" viewBox="0 0 900 56" role="img" aria-label="Featured projects">
-  <line x1="40" y1="28" x2="303" y2="28" stroke="#12805c" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
-  <line x1="597" y1="28" x2="860" y2="28" stroke="#12805c" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
-  <rect x="319.2" y="8" width="261.5" height="40" rx="12" fill="#12805c"/>
+  <line x1="40" y1="28" x2="303" y2="28" stroke="#111111" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <line x1="597" y1="28" x2="860" y2="28" stroke="#111111" stroke-opacity=".45" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 8"/>
+  <rect x="319.2" y="8" width="261.5" height="40" rx="12" fill="#111111"/>
   <g transform="translate(337.2 18) scale(1.25)"><path d="M1.5 3A1.5 1.5 0 013 1.5h3.6l1.5 1.8H13A1.5 1.5 0 0114.5 4.8v7.7A1.5 1.5 0 0113 14H3a1.5 1.5 0 01-1.5-1.5z" fill="#fff"/></g>
   <text x="367.2" y="34" style="font:800 19px 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;fill:#fff">Featured projects</text>
 </svg>
